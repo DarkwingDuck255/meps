@@ -1,12 +1,20 @@
+import Main from '../Main/Main';
+import { useNavigate, Route, Routes, useLocation } from "react-router-dom";
 import './App.css';
-import Header from '../Header/Header.js';
-import AboutUs from '../AboutUs/AboutUs';
+import Partnership from '../Partnership/Partnership';
+
 
 function App() {
   return (
     <div className="App">
-      <Header/>
-      <AboutUs/>
+      <Routes>
+        <Route path='/' element={
+          <Main />
+        } />
+        <Route path='/partnership' element={
+          <Partnership />
+        } />
+      </Routes>
     </div>
   );
 }

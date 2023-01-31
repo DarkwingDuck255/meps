@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import logo from '../../images/logo.svg';
 import './Header.css';
 
@@ -10,7 +11,7 @@ function Header() {
                 </a>
                 <nav className="header__nav">
                     <a className="header__nav-link common__link" href='#'>О нас</a>
-                    <a className="header__nav-link common__link" href='#'>Партнерство</a>
+                    <Link className="header__nav-link common__link" to='/partnership'>Партнерство</Link>
                     <a className="header__nav-link common__link" href='#'>Оборудование</a>
                     <a className="header__nav-link common__link" href='#'>Услуги</a>
                     <a className="header__nav-link common__link" href='#'>Контакты</a>

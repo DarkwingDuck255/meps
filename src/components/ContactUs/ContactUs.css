@@ -1,0 +1,32 @@
+.contact-us {
+    /* height: 60px; */
+    /* display: flex; */
+    position: fixed;
+    z-index: 4;
+    right: -76px;
+    top: 304px;
+    box-shadow: 0px 4px 16px rgb(0 0 0 / 10%);
+    border-radius: 8px 8px 0px 0px;
+    background-color: white;
+    transform: rotate(-90deg);
+}
+
+.contact-us__text {
+    /* margin: 16px 22px; */
+    /* display: flex; */
+    color: #0084C7;
+    /* width: 207px; */
+    padding: 10px 16px;
+    box-sizing: border-box;
+    /* height: 184px; */
+    font-family: 'Noto Sans';
+    font-style: normal;
+    /* width: max-content; */
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    /* transform: rotate(-90deg); */
+    align-items: center;
+    /* text-align: center; */
+     /* justify-self: center; */
+}
