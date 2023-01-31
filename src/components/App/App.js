@@ -2,6 +2,7 @@ import Main from '../Main/Main';
 import { useNavigate, Route, Routes, useLocation } from "react-router-dom";
 import './App.css';
 import Partnership from '../Partnership/Partnership';
+import Machinery from '../Machinery/Machinery';
 
 
 function App() {
@@ -13,6 +14,10 @@ function App() {
         } />
         <Route path='/partnership' element={
           <Partnership />
+        } />
+
+        <Route path='/machinery' element={
+          <Machinery />
         } />
       </Routes>
     </div>

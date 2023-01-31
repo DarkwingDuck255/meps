@@ -12,7 +12,7 @@ function Header() {
                 <nav className="header__nav">
                     <a className="header__nav-link common__link" href='#'>О нас</a>
                     <Link className="header__nav-link common__link" to='/partnership'>Партнерство</Link>
-                    <a className="header__nav-link common__link" href='#'>Оборудование</a>
+                    <Link className="header__nav-link common__link" to='/machinery'>Оборудование</Link>
                     <a className="header__nav-link common__link" href='#'>Услуги</a>
                     <a className="header__nav-link common__link" href='#'>Контакты</a>
                 </nav>

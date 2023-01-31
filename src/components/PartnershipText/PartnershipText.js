@@ -1,5 +1,6 @@
 import './PartnershipText.css';
 import partnershipHeaderImg from '../../images/partnership-header-img.png';
+
 function PartnershipText() {
     return (
         <section className="partnership-section">
@@ -45,6 +46,8 @@ function PartnershipText() {
                     для своих клиентов на протяжении многих лет.
                 </p>
             </div>
+
+            
         </section>
     )
 }
