@@ -1,0 +1,23 @@
+.modules {
+    font-family: 'Fira Sans';
+    font-style: normal;
+    width: 100%;
+    background-color: #F6F8FA;
+}
+
+.modules__header {
+    max-width: 1156px;
+    margin: 0 auto 0 auto;
+    color: #0084C7;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 52px;
+}
+
+.modules__description {
+    max-width: 1156px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    margin: 29px auto 0 auto;
+}

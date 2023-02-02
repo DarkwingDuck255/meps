@@ -1,0 +1,37 @@
+.machinery-intro {
+    max-width: 1127px;
+    width: 100%;
+    height: 522px;
+    background-color: #0084C7;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    margin-top: 48px;
+    font-family: 'Fira Sans';
+    font-style: normal;
+    color: white;
+}
+
+.machinery-intro__header-wrapper {
+    border-bottom: 2px solid white;
+    margin: 108px auto 25px 123px;
+    max-width: 568px;
+    width: 100%;
+}
+
+.machinery-intro__header {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 52px;
+    text-align: center;
+    margin: 0 auto 18px auto;
+}
+
+.machinery-intro__description {
+    max-width: 568px;
+    width: 100%;
+    margin: 0 auto 25px 123px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+}
