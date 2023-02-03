@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/meps/static/css/main.30716630.css",
+    "main.js": "/meps/static/js/main.0e7374fd.js",
+    "static/js/787.898f8373.chunk.js": "/meps/static/js/787.898f8373.chunk.js",
+    "static/media/slogan-background.svg": "/meps/static/media/slogan-background.3b1e98c1fddfbcceba57.svg",
+    "static/media/partnership-header-img.png": "/meps/static/media/partnership-header-img.be770c0a6bcc6ace669f.png",
+    "static/media/NotoSans-Regular.ttf": "/meps/static/media/NotoSans-Regular.eae34fa8f1e0c4c6d797.ttf",
+    "static/media/FiraSans-Regular.ttf": "/meps/static/media/FiraSans-Regular.f4eb295ecc2fb842d61c.ttf",
+    "static/media/mitsubishi.jpg": "/meps/static/media/mitsubishi.20a4524ffd79dfc064bc.jpg",
+    "static/media/carousel.png": "/meps/static/media/carousel.553bacc39a66eca3fb7b.png",
+    "static/media/OpenSans-Regular.ttf": "/meps/static/media/OpenSans-Regular.77c09223204154ae8d43.ttf",
+    "static/media/meps-group.svg": "/meps/static/media/meps-group.697279a835c69d0a86603423404c68d5.svg",
+    "static/media/logo.svg": "/meps/static/media/logo.e58ed1fbc895ffa0d69b38692c44c09a.svg",
+    "static/media/MIDDLE EAST POWER SOLUTIONS.svg": "/meps/static/media/MIDDLE EAST POWER SOLUTIONS.1c2d5a3c070bb02e7b3ebdc94d0caeaf.svg",
+    "static/media/gear.svg": "/meps/static/media/gear.29091b334d84147947d64ff77c18d40f.svg",
+    "static/media/time.svg": "/meps/static/media/time.df83668c0e07c168bb4f955604dfe732.svg",
+    "static/media/MEPS.svg": "/meps/static/media/MEPS.71487b462808ae63ad5edf87e28b6848.svg",
+    "static/media/squares.svg": "/meps/static/media/squares.da85f2a7816aa1614cb07f06abdfe9cc.svg",
+    "static/media/volume.svg": "/meps/static/media/volume.0c9c2111e0ed0df3b0cb8610e9d292cc.svg",
+    "static/media/arrow-to-top.svg": "/meps/static/media/arrow-to-top.3d9279f2349e1ffd40c7.svg",
+    "index.html": "/meps/index.html",
+    "static/media/arrow.svg": "/meps/static/media/arrow.e93bfaac4c3ea7934fc0b798a98688ee.svg",
+    "main.30716630.css.map": "/meps/static/css/main.30716630.css.map",
+    "main.0e7374fd.js.map": "/meps/static/js/main.0e7374fd.js.map",
+    "787.898f8373.chunk.js.map": "/meps/static/js/787.898f8373.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.30716630.css",
+    "static/js/main.0e7374fd.js"
+  ]
+}
