@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/meps/static/css/main.48dd4d2a.css",
-    "main.js": "/meps/static/js/main.a4ab9a6f.js",
+    "main.css": "/meps/static/css/main.bd402074.css",
+    "main.js": "/meps/static/js/main.56bc2d9c.js",
     "static/js/787.898f8373.chunk.js": "/meps/static/js/787.898f8373.chunk.js",
     "static/media/slogan-background.svg": "/meps/static/media/slogan-background.0f69ac04ba16047f4cc0.svg",
     "static/media/partnership-header-img.png": "/meps/static/media/partnership-header-img.be770c0a6bcc6ace669f.png",
@@ -25,6 +25,7 @@
     "static/media/ktp.png": "/meps/static/media/ktp.0ffd775be5b46a75857f.png",
     "static/media/wind-supply.png": "/meps/static/media/wind-supply.70b4bf847a65e691f78c.png",
     "static/media/meps-group.svg": "/meps/static/media/meps-group.b5b51571b35b624e44412493252a4934.svg",
+    "static/media/mitsubishi-graph.png": "/meps/static/media/mitsubishi-graph.780714b17939055dcbcf.png",
     "static/media/logo.svg": "/meps/static/media/logo.cf4f75e4b616f8d827700b72bb091cf2.svg",
     "static/media/MIDDLE EAST POWER SOLUTIONS.svg": "/meps/static/media/MIDDLE EAST POWER SOLUTIONS.5ee574ebf7c926a14793b52c018ff092.svg",
     "static/media/gear.svg": "/meps/static/media/gear.21a1367ffe7f3b2a047f0bfabcfe9a91.svg",
@@ -35,12 +36,13 @@
     "static/media/arrow-to-top.svg": "/meps/static/media/arrow-to-top.c90e3a4d13b7981e1a88.svg",
     "index.html": "/meps/index.html",
     "static/media/arrow.svg": "/meps/static/media/arrow.57660e246e00b038422fe86ad92b49fb.svg",
-    "main.48dd4d2a.css.map": "/meps/static/css/main.48dd4d2a.css.map",
-    "main.a4ab9a6f.js.map": "/meps/static/js/main.a4ab9a6f.js.map",
+    "static/media/list-style.svg": "/meps/static/media/list-style.254b6755ad445af58b26.svg",
+    "main.bd402074.css.map": "/meps/static/css/main.bd402074.css.map",
+    "main.56bc2d9c.js.map": "/meps/static/js/main.56bc2d9c.js.map",
     "787.898f8373.chunk.js.map": "/meps/static/js/787.898f8373.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.48dd4d2a.css",
-    "static/js/main.a4ab9a6f.js"
+    "static/css/main.bd402074.css",
+    "static/js/main.56bc2d9c.js"
   ]
 }
