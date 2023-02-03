@@ -1,15 +1,27 @@
 .machinery-intro {
-    max-width: 1127px;
+    max-width: 1440px;
     width: 100%;
-    height: 522px;
-    background-color: #0084C7;
-    display: flex;
-    flex-direction: column;
-    align-self: flex-end;
+    
+    
+    
+    margin: 0 auto;
     margin-top: 48px;
     font-family: 'Fira Sans';
     font-style: normal;
     color: white;
+    
+}
+
+.machinery-intro__container {
+    max-width: 1127px;
+    width: 100%;
+    height: 522px;
+
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    margin: 0 0 0 auto;
+    background-color: #0084C7;
 }
 
 .machinery-intro__header-wrapper {
