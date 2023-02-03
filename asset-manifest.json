@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/meps/static/css/main.30716630.css",
-    "main.js": "/meps/static/js/main.0e7374fd.js",
+    "main.css": "/meps/static/css/main.ee6fd954.css",
+    "main.js": "/meps/static/js/main.06544c2f.js",
     "static/js/787.898f8373.chunk.js": "/meps/static/js/787.898f8373.chunk.js",
     "static/media/slogan-background.svg": "/meps/static/media/slogan-background.3b1e98c1fddfbcceba57.svg",
     "static/media/partnership-header-img.png": "/meps/static/media/partnership-header-img.be770c0a6bcc6ace669f.png",
@@ -9,7 +9,21 @@
     "static/media/FiraSans-Regular.ttf": "/meps/static/media/FiraSans-Regular.f4eb295ecc2fb842d61c.ttf",
     "static/media/mitsubishi.jpg": "/meps/static/media/mitsubishi.20a4524ffd79dfc064bc.jpg",
     "static/media/carousel.png": "/meps/static/media/carousel.553bacc39a66eca3fb7b.png",
+    "static/media/water-heat.png": "/meps/static/media/water-heat.75118444121a58e8838b.png",
+    "static/media/adm-module.png": "/meps/static/media/adm-module.9aa221521c58a9ce8e24.png",
+    "static/media/kpp.png": "/meps/static/media/kpp.aeb81d6ceef72e48255e.png",
+    "static/media/warehouse.png": "/meps/static/media/warehouse.19e464ee7652dd952fca.png",
+    "static/media/thermal-point.png": "/meps/static/media/thermal-point.395e55de8a4201292fd3.png",
+    "static/media/gas.png": "/meps/static/media/gas.00819a2a54aaa9cad389.png",
+    "static/media/block-container.png": "/meps/static/media/block-container.b865c24dba0128092cf4.png",
     "static/media/OpenSans-Regular.ttf": "/meps/static/media/OpenSans-Regular.77c09223204154ae8d43.ttf",
+    "static/media/air-compress.png": "/meps/static/media/air-compress.edfed9297fde3e635a62.png",
+    "static/media/partnership-two.png": "/meps/static/media/partnership-two.36e4925a10023d183e3c.png",
+    "static/media/partnership-one.png": "/meps/static/media/partnership-one.c50445c06c2093ed7c54.png",
+    "static/media/partnership-three.png": "/meps/static/media/partnership-three.fba3a0a6f1a1ca69e030.png",
+    "static/media/partnership-four.png": "/meps/static/media/partnership-four.bf767c0575d873eb7c96.png",
+    "static/media/ktp.png": "/meps/static/media/ktp.0ffd775be5b46a75857f.png",
+    "static/media/wind-supply.png": "/meps/static/media/wind-supply.70b4bf847a65e691f78c.png",
     "static/media/meps-group.svg": "/meps/static/media/meps-group.697279a835c69d0a86603423404c68d5.svg",
     "static/media/logo.svg": "/meps/static/media/logo.e58ed1fbc895ffa0d69b38692c44c09a.svg",
     "static/media/MIDDLE EAST POWER SOLUTIONS.svg": "/meps/static/media/MIDDLE EAST POWER SOLUTIONS.1c2d5a3c070bb02e7b3ebdc94d0caeaf.svg",
@@ -21,12 +35,12 @@
     "static/media/arrow-to-top.svg": "/meps/static/media/arrow-to-top.3d9279f2349e1ffd40c7.svg",
     "index.html": "/meps/index.html",
     "static/media/arrow.svg": "/meps/static/media/arrow.e93bfaac4c3ea7934fc0b798a98688ee.svg",
-    "main.30716630.css.map": "/meps/static/css/main.30716630.css.map",
-    "main.0e7374fd.js.map": "/meps/static/js/main.0e7374fd.js.map",
+    "main.ee6fd954.css.map": "/meps/static/css/main.ee6fd954.css.map",
+    "main.06544c2f.js.map": "/meps/static/js/main.06544c2f.js.map",
     "787.898f8373.chunk.js.map": "/meps/static/js/787.898f8373.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.30716630.css",
-    "static/js/main.0e7374fd.js"
+    "static/css/main.ee6fd954.css",
+    "static/js/main.06544c2f.js"
   ]
 }
