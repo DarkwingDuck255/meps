@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "/meps/static/css/main.19cf8f03.css",
-    "main.js": "/meps/static/js/main.781ec5ea.js",
+    "main.css": "/meps/static/css/main.973247f4.css",
+    "main.js": "/meps/static/js/main.3739dc31.js",
     "static/js/787.898f8373.chunk.js": "/meps/static/js/787.898f8373.chunk.js",
     "static/media/slogan-background.svg": "/meps/static/media/slogan-background.0f69ac04ba16047f4cc0.svg",
+    "static/media/schema.png": "/meps/static/media/schema.27378e9be7cc2f3153b2.png",
     "static/media/partnership-header-img.png": "/meps/static/media/partnership-header-img.be770c0a6bcc6ace669f.png",
-    "static/media/schema.png": "/meps/static/media/schema.fb85dce66b5703fb9165.png",
     "static/media/NotoSans-Regular.ttf": "/meps/static/media/NotoSans-Regular.eae34fa8f1e0c4c6d797.ttf",
     "static/media/FiraSans-Regular.ttf": "/meps/static/media/FiraSans-Regular.f4eb295ecc2fb842d61c.ttf",
     "static/media/mitsubishi.jpg": "/meps/static/media/mitsubishi.20a4524ffd79dfc064bc.jpg",
     "static/media/carousel.png": "/meps/static/media/carousel.553bacc39a66eca3fb7b.png",
+    "static/media/techinfo.png": "/meps/static/media/techinfo.3e6e5ca8d18bfca74876.png",
     "static/media/water-heat.png": "/meps/static/media/water-heat.75118444121a58e8838b.png",
     "static/media/adm-module.png": "/meps/static/media/adm-module.9aa221521c58a9ce8e24.png",
     "static/media/kpp.png": "/meps/static/media/kpp.aeb81d6ceef72e48255e.png",
@@ -42,14 +43,16 @@
     "static/media/volume.svg": "/meps/static/media/volume.df3860f9460456c793c0f9d6caa9f429.svg",
     "static/media/arrow-to-top.svg": "/meps/static/media/arrow-to-top.c90e3a4d13b7981e1a88.svg",
     "index.html": "/meps/index.html",
+    "static/media/icon-tech.svg": "/meps/static/media/icon-tech.6dd839e9cfdc4334bf262bab5f7f45dd.svg",
     "static/media/arrow.svg": "/meps/static/media/arrow.57660e246e00b038422fe86ad92b49fb.svg",
+    "static/media/list-img.svg": "/meps/static/media/list-img.fc4047fb3873c6a6aef8.svg",
     "static/media/list-style.svg": "/meps/static/media/list-style.254b6755ad445af58b26.svg",
-    "main.19cf8f03.css.map": "/meps/static/css/main.19cf8f03.css.map",
-    "main.781ec5ea.js.map": "/meps/static/js/main.781ec5ea.js.map",
+    "main.973247f4.css.map": "/meps/static/css/main.973247f4.css.map",
+    "main.3739dc31.js.map": "/meps/static/js/main.3739dc31.js.map",
     "787.898f8373.chunk.js.map": "/meps/static/js/787.898f8373.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.19cf8f03.css",
-    "static/js/main.781ec5ea.js"
+    "static/css/main.973247f4.css",
+    "static/js/main.3739dc31.js"
   ]
 }
