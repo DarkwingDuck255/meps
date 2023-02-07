@@ -48,7 +48,7 @@ export default function Catalogue() {
                     <button className='catalogue__card-popup-button' href='#'>Подробнее</button>
                 </div>
 
-                <div className='catalogue__card'>
+                {/* <div className='catalogue__card'>
                     <img className='catalogue__card-image' src={airCompress} />
                     <h4 className='catalogue__card-header'>
                         Воздушные компрессорные
@@ -57,7 +57,7 @@ export default function Catalogue() {
 
                     </p>
                     <button className='catalogue__card-popup-button' href='#'>Подробнее</button>
-                </div>
+                </div> */}
 
                 <div className='catalogue__card'>
                     <img className='catalogue__card-image' src={blockContainer} />
