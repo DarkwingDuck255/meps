@@ -2,12 +2,12 @@ import './Catalogue.css';
 import windSupply from '../../images/wind-supply.png';
 import waterHeat from '../../images/water-heat.png';
 import gas from '../../images/gas.png';
-import airCompress from '../../images/air-compress.png';
+// import airCompress from '../../images/air-compress.png';
 import blockContainer from '../../images/block-container.png';
 import ktp from '../../images/ktp.png';
 
 
-export default function Catalogue() {
+export default function Catalogue(props) {
     return (
         <section className='catalogue'>
             <h2 className='catalogue__header'>
@@ -22,7 +22,7 @@ export default function Catalogue() {
                     <p className='catalogue__card-description'>
                         Гибридные энергетические установки предназначены для электроснабжения потребителей за счет выработки электрической энергии от силы ветра, а при его отсутствии от дизельного, либо газового топлива.
                     </p>
-                    <button className='catalogue__card-popup-button' href='#'>Подробнее</button>
+                    <button type='button'  className='catalogue__card-popup-button' onClick={props.onOpen}>Подробнее</button>
                 </div>
 
                 <div className='catalogue__card'>

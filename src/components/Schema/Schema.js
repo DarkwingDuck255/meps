@@ -6,6 +6,8 @@ import gears from '../../images/gears.svg';
 import sound from '../../images/sound.svg';
 import service from '../../images/service.svg';
 import fireProtect from '../../images/fire-protect.svg';
+import coldProtect from '../../images/cold-protect.svg';
+import sertification from '../../images/sertification.svg';
 
 export default function Schema() {
     return (
@@ -53,10 +55,10 @@ export default function Schema() {
                     <img src={sound} className='schema__advantages-item-img' />
                     <div className='schema__advantages-item-wrap'>
                         <h3 className='schema__advantages-item-header'>
-                        Защита от шума
+                            Защита от шума
                         </h3>
                         <p className='schema__advantages-item-description'>
-                        Позволяет устанавливать оборудование вблизи жилых домов
+                            Позволяет устанавливать оборудование вблизи жилых домов
                         </p>
                     </div>
                 </div>
@@ -64,10 +66,10 @@ export default function Schema() {
                     <img src={service} className='schema__advantages-item-img' />
                     <div className='schema__advantages-item-wrap'>
                         <h3 className='schema__advantages-item-header'>
-                        Удобный сервис
+                            Удобный сервис
                         </h3>
                         <p className='schema__advantages-item-description'>
-                        Свободное пространство внутри контейнера для сервисных инженеров и обслуживающего персонала
+                            Свободное пространство внутри контейнера для сервисных инженеров и обслуживающего персонала
                         </p>
                     </div>
                 </div>
@@ -75,10 +77,33 @@ export default function Schema() {
                     <img src={fireProtect} className='schema__advantages-item-img' />
                     <div className='schema__advantages-item-wrap'>
                         <h3 className='schema__advantages-item-header'>
-                        Пожарная безопасность
+                            Пожарная безопасность
                         </h3>
                         <p className='schema__advantages-item-description'>
-                        Имеет в составе систему пожаротушения и сигнализации
+                            Имеет в составе систему пожаротушения и сигнализации
+                        </p>
+                    </div>
+                </div>
+                <div className='schema__advantages-item'>
+                    <img src={coldProtect} className='schema__advantages-item-img' />
+                    <div className='schema__advantages-item-wrap'>
+                        <h3 className='schema__advantages-item-header'>
+                            Защита от холода
+                        </h3>
+                        <p className='schema__advantages-item-description'>
+                            Эксплуатация оборудования при температурах от – 60⁰ до +60⁰
+
+                        </p>
+                    </div>
+                </div>
+                <div className='schema__advantages-item'>
+                    <img src={sertification} className='schema__advantages-item-img' />
+                    <div className='schema__advantages-item-wrap'>
+                        <h3 className='schema__advantages-item-header'>
+                        Сертификация
+                        </h3>
+                        <p className='schema__advantages-item-description'>
+                        Энергетические установки имеют сертификат соответствия
                         </p>
                     </div>
                 </div>

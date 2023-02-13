@@ -43,7 +43,7 @@
     flex-wrap: wrap;
     justify-content: center;
     margin-bottom: 61px;
-
+    column-gap: 20px;
 }
 
 .tech-info__specification-card {
@@ -56,13 +56,13 @@
     box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     background-color: #fff;
-    margin-right: 20px;
+    /* margin-right: 20px; */
     margin-top: 71px;
 }
 
-.tech-info__specification-card:last-of-type{
+/* .tech-info__specification-card:last-of-type{
     margin-right: 0px;
-}
+} */
 
 .tech-info__specification-card-icon {
     width: 80px;
