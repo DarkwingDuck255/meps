@@ -1,11 +1,11 @@
 {
   "files": {
     "main.css": "/static/css/main.7dd994d1.css",
-    "main.js": "/static/js/main.8eb0feb3.js",
+    "main.js": "/static/js/main.6eaf1f50.js",
     "static/js/787.898f8373.chunk.js": "/static/js/787.898f8373.chunk.js",
     "static/media/slogan-background.svg": "/static/media/slogan-background.0f69ac04ba16047f4cc0.svg",
     "static/media/partnership-header-img.png": "/static/media/partnership-header-img.be770c0a6bcc6ace669f.png",
-    "static/media/schema.png": "/static/media/schema.032306ab6051839ed35a.png",
+    "static/media/schema.png": "/static/media/schema.488f3a0e07a0ab078983.png",
     "static/media/NotoSans-Regular.ttf": "/static/media/NotoSans-Regular.eae34fa8f1e0c4c6d797.ttf",
     "static/media/FiraSans-Regular.ttf": "/static/media/FiraSans-Regular.f4eb295ecc2fb842d61c.ttf",
     "static/media/mitsubishi.jpg": "/static/media/mitsubishi.20a4524ffd79dfc064bc.jpg",
@@ -55,11 +55,11 @@
     "static/media/list-img.svg": "/static/media/list-img.fc4047fb3873c6a6aef8.svg",
     "static/media/list-style.svg": "/static/media/list-style.254b6755ad445af58b26.svg",
     "main.7dd994d1.css.map": "/static/css/main.7dd994d1.css.map",
-    "main.8eb0feb3.js.map": "/static/js/main.8eb0feb3.js.map",
+    "main.6eaf1f50.js.map": "/static/js/main.6eaf1f50.js.map",
     "787.898f8373.chunk.js.map": "/static/js/787.898f8373.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7dd994d1.css",
-    "static/js/main.8eb0feb3.js"
+    "static/js/main.6eaf1f50.js"
   ]
 }
