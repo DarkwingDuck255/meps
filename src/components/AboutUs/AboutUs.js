@@ -5,6 +5,7 @@ import middleEast from '../../images/MIDDLE EAST POWER SOLUTIONS.svg';
 import mepsGroup from '../../images/meps-group.svg';
 import mitsubishi from '../../images/mitsubishi.jpg';
 import arrow from '../../images/arrow.svg';
+import { Link } from 'react-router-dom';
 
 function AboutUs() {
 
@@ -58,7 +59,9 @@ function AboutUs() {
                         ООО «MIDDLE EAST POWER SOLUTIONS» является официальным партнером
                         и сервисным представителем компании Mitsubishi Turbocharger and Engine Europe b.V. в Узбекистане и странах СНГ.
                     </p>
-                    <img src={arrow} className='about-us__mitsubishi-description-link' alt='изображение стелки для перехода на страницу' />
+                    <Link to='/partnership'>
+                        <img src={arrow} className='about-us__mitsubishi-description-link' alt='изображение стелки для перехода на страницу' />
+                    </Link>
                 </div>
                 <div className='about-us__mitsubishi-green-rectangle' />
             </div>

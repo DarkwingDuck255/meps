@@ -1,17 +1,18 @@
 import './Footer.css';
 import logo from '../../images/logo.svg'
+import { Link } from 'react-router-dom';
 // import arrowButton from '../../images/arrow-to-top.svg';
 
 function Footer() {
     return (
         <section className='footer'>
-            <div className='footer__wrapper'>
+            <nav className='footer__wrapper'>
                 <div className='footer__container'>
-                    <a className='footer__link common__link' href='#'>О нас</a>
-                    <a className='footer__link common__link' href='#'>Партнерство</a>
+                    <Link to='/' className='footer__link common__link' href='#'>О нас</Link>
+                    <Link to='/partnership' className='footer__link common__link' href='#'>Партнерство</Link>
                 </div>
                 <div className='footer__container'>
-                    <a className='footer__link common__link' href='#'>Оборудование</a>
+                    <Link to='/machinery' className='footer__link common__link' href='#'>Оборудование</Link>
                     <a className='footer__link common__link' href='#'>Услуги</a>
                 </div>
                 <img src={logo} className='footer__logo' alt='логотип' />
@@ -36,7 +37,7 @@ function Footer() {
 
                 </div>
                 {/* <button className='footer__button-to-top'/> */}
-            </div>
+            </nav>
 
         </section>
     )

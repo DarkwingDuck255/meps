@@ -22,7 +22,7 @@ export default function Catalogue(props) {
                     <p className='catalogue__card-description'>
                         Гибридные энергетические установки предназначены для электроснабжения потребителей за счет выработки электрической энергии от силы ветра, а при его отсутствии от дизельного, либо газового топлива.
                     </p>
-                    <button type='button'  className='catalogue__card-popup-button' onClick={props.onOpen}>Подробнее</button>
+                    <button type='button'  className='catalogue__card-popup-button' onClick={props.onOpenHibrid}>Подробнее</button>
                 </div>
 
                 <div className='catalogue__card'>
@@ -34,7 +34,7 @@ export default function Catalogue(props) {
                         Водогрейные котельные предназначены для обеспечения надежного теплоснабжения промышленных объектов
                         и удаленных потребителей.
                     </p>
-                    <button className='catalogue__card-popup-button' href='#'>Подробнее</button>
+                    <button className='catalogue__card-popup-button' onClick={props.onOpenBoiler}>Подробнее</button>
                 </div>
 
                 <div className='catalogue__card'>
@@ -45,7 +45,7 @@ export default function Catalogue(props) {
                     <p className='catalogue__card-description'>
                         Комплектные установки с полной системой автоматизации на базе компрессоров Atlas Сорсо, Ariel, Cooper, Hyundai и т.д
                     </p>
-                    <button className='catalogue__card-popup-button' href='#'>Подробнее</button>
+                    <button className='catalogue__card-popup-button' onClick={props.onOpenGasCompress}>Подробнее</button>
                 </div>
 
                 {/* <div className='catalogue__card'>
@@ -67,7 +67,7 @@ export default function Catalogue(props) {
                     <p className='catalogue__card-description'>
                         ЗРУ изготавливаются под индивидуальные решения для каждого Заказчика с применением современного и безопасного в эксплуатации электрооборудования.
                     </p>
-                    <button className='catalogue__card-popup-button' href='#'>Подробнее</button>
+                    <button className='catalogue__card-popup-button' onClick={props.onOpenBlockContainer} >Подробнее</button>
                 </div>
 
                 <div className='catalogue__card'>
@@ -80,7 +80,7 @@ export default function Catalogue(props) {
                         а при его отсутствии от дизельного,
                         либо газового топлива.
                     </p>
-                    <button className='catalogue__card-popup-button' href='#'>Подробнее</button>
+                    <button className='catalogue__card-popup-button' onClick={props.onOpenKTP}>Подробнее</button>
                 </div>
             </div>
         </section>
