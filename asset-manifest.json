@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.21674fb0.css",
-    "main.js": "/static/js/main.10808616.js",
+    "main.css": "/static/css/main.e18caa78.css",
+    "main.js": "/static/js/main.2e2ecd36.js",
     "static/js/787.898f8373.chunk.js": "/static/js/787.898f8373.chunk.js",
     "static/media/slogan-background.svg": "/static/media/slogan-background.0f69ac04ba16047f4cc0.svg",
     "static/media/partnership-header-img.png": "/static/media/partnership-header-img.be770c0a6bcc6ace669f.png",
@@ -30,14 +30,20 @@
     "static/media/mitsubishi-graph.png": "/static/media/mitsubishi-graph.780714b17939055dcbcf.png",
     "static/media/logo.svg": "/static/media/logo.cf4f75e4b616f8d827700b72bb091cf2.svg",
     "static/media/MIDDLE EAST POWER SOLUTIONS.svg": "/static/media/MIDDLE EAST POWER SOLUTIONS.5ee574ebf7c926a14793b52c018ff092.svg",
+    "static/media/major-repairs.svg": "/static/media/major-repairs.be5c7b88c75dc22160fbeb1c6a488c3b.svg",
     "static/media/exploitation.svg": "/static/media/exploitation.53529bd2e72fee15782d9497f5ce38dc.svg",
+    "static/media/training.svg": "/static/media/training.170e2ca40c6c1b5c676b1c6c6c66a7be.svg",
+    "static/media/supplies.svg": "/static/media/supplies.ce13c14c9947a37116167a365384834a.svg",
     "static/media/gear.svg": "/static/media/gear.21a1367ffe7f3b2a047f0bfabcfe9a91.svg",
+    "static/media/warranty.svg": "/static/media/warranty.9cc8e857abff906c9751d5e112e4e75e.svg",
     "static/media/electric2.svg": "/static/media/electric2.036e3ddeea2c0e4083992d08c8735983.svg",
     "static/media/eco.svg": "/static/media/eco.ef358c60117b49c38341636ec78edcbb.svg",
     "static/media/resistor.svg": "/static/media/resistor.5735b4ad6952eb1fad84862e539923ed.svg",
     "static/media/wind.svg": "/static/media/wind.a8f2b59b06f3036676f401f5074a0cf8.svg",
     "static/media/fuel.svg": "/static/media/fuel.006c46922d2a552f49849c7385d441e2.svg",
+    "static/media/tech-support.svg": "/static/media/tech-support.516090b5688ae256746f793486d19d68.svg",
     "static/media/transport.svg": "/static/media/transport.16ff0c6f1d28cf0d2a0052b0ac0b1e04.svg",
+    "static/media/monitoring.svg": "/static/media/monitoring.1d0c46478d98a0757b4d48ddebaa6f4b.svg",
     "static/media/electric1.svg": "/static/media/electric1.306b82154077d41c264f5dfacb6425e4.svg",
     "static/media/umbrella.svg": "/static/media/umbrella.62dd70906b83f0b17df706e711dfd383.svg",
     "static/media/sound.svg": "/static/media/sound.e4f42478f493870f4319d7ef614482ef.svg",
@@ -57,18 +63,19 @@
     "static/media/cutout.svg": "/static/media/cutout.3d47a3075313a0f4fd688dc853e32893.svg",
     "static/media/arrow-to-top.svg": "/static/media/arrow-to-top.c90e3a4d13b7981e1a88.svg",
     "static/media/fire.svg": "/static/media/fire.d14a538315e51c5c9b60ae58191a3225.svg",
+    "static/media/plan-repair.svg": "/static/media/plan-repair.e927a43eed3dbd597930ba55d989f9a3.svg",
     "index.html": "/index.html",
     "static/media/sertification.svg": "/static/media/sertification.58166ea47b4f8bc6086b1a74001663a1.svg",
     "static/media/arrow.svg": "/static/media/arrow.57660e246e00b038422fe86ad92b49fb.svg",
     "static/media/close-btn.svg": "/static/media/close-btn.7d97a5216be59bddc2bf.svg",
     "static/media/list-img.svg": "/static/media/list-img.fc4047fb3873c6a6aef8.svg",
     "static/media/list-style.svg": "/static/media/list-style.254b6755ad445af58b26.svg",
-    "main.21674fb0.css.map": "/static/css/main.21674fb0.css.map",
-    "main.10808616.js.map": "/static/js/main.10808616.js.map",
+    "main.e18caa78.css.map": "/static/css/main.e18caa78.css.map",
+    "main.2e2ecd36.js.map": "/static/js/main.2e2ecd36.js.map",
     "787.898f8373.chunk.js.map": "/static/js/787.898f8373.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.21674fb0.css",
-    "static/js/main.10808616.js"
+    "static/css/main.e18caa78.css",
+    "static/js/main.2e2ecd36.js"
   ]
 }
