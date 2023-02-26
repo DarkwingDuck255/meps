@@ -1,0 +1,61 @@
+.services {
+    max-width: 1440px;
+    width: 100%;
+    margin: 134px auto 136px auto;
+    font-family: 'Fira Sans';
+    font-style: normal;
+}
+
+.services__header {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 52px;
+    max-width: 1440px;
+    height: 92px;
+    width: 100%;
+    background-color: #0084C7;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.services__text {
+    max-width: 1156px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px auto 44px auto;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.servces__advantages {
+    display: flex;
+    max-width: 970px;
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: row;
+    row-gap: 34px;
+    column-gap: 20px;
+    margin: 0 auto 0 auto;
+}
+
+.services__advantages-item {
+    max-width: 470px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    align-items: center;
+}
+
+.services__advantages-item-image {
+    width: 80px;
+    height: 80px;
+}

@@ -13,8 +13,8 @@ function Header() {
                     <a className="header__nav-link common__link" href='#'>О нас</a>
                     <Link className="header__nav-link common__link" to='/partnership'>Партнерство</Link>
                     <Link className="header__nav-link common__link" to='/machinery'>Оборудование</Link>
-                    {/* <a className="header__nav-link common__link" href='#'>Услуги</a>
-                    <a className="header__nav-link common__link" href='#'>Контакты</a> */}
+                    <Link className="header__nav-link common__link" to='/services'>Услуги</Link>
+                    {/* <a className="header__nav-link common__link" href='#'>Контакты</a> */}
                 </nav>
             </div>
         </section >

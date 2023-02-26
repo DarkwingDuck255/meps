@@ -1,0 +1,189 @@
+label {
+    background-color: white;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.feedback {
+    max-width: 1299px;
+    width: 100%;
+    font-family: 'Fira Sans';
+    font-style: normal;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.feedback__wrap {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+
+.feedback__green-rectangle {
+    max-width: 677px;
+    width: 100%;
+    height: 444px;
+    background-color: #009138;
+    color: white;
+    position: relative;
+    margin-top: 44px;
+
+}
+
+.feedback__green-rectangle-wrap {
+    max-width: 372px;
+    width: 100%;
+    /* margin: 154px 64px 20px auto; */
+    position: absolute;
+    top: 154px;
+    right: 64px;
+}
+
+.feedback__green-rectangle-header {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 52px;
+    margin: 0;
+
+}
+
+.feedback__green-rectangle-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 20px;
+}
+
+.feedback__form-container {
+    max-width: 622px;
+    width: 100%;
+    position: relative;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    /* background-color: white; */
+}
+
+.feedback__form-decoration {
+    background-image: url(../../images/form-background.svg);
+    background-size: auto;
+    height: 252px;
+    max-width: 622px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
+}
+
+.feedback__form-decoration-second {
+    background-image: url(../../images/form-background2.svg);
+    background-size: auto;
+    height: 165px;
+    max-width: 338px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.feedback__form-header {
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 32px;
+    color: #0084C7;
+    margin: 32px auto 46px 40px;
+    padding: 0;
+}
+
+/* Стили формы */
+
+.feedback__form {
+    display: flex;
+    flex-direction: column;
+    /* margin: 0 auto 32px 38px; */
+    max-width: 544px;
+    width: 100%;
+    gap: 29px;
+    position: absolute;
+    top: 110px;
+    left: 38px;
+}
+
+.feedback__form-name-tel-wrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 544px;
+    width: 100%;
+    /* gap: 27px; */
+    justify-content: space-between;
+}
+
+.feedback__form-input-wrap {
+    position: relative;
+}
+
+.feedback__form-name-label {
+    position: absolute;
+    top: -10px;
+    left: 26px;
+}
+
+.feedback__form-name {
+    max-width: 301px;
+    width: 100%;
+    height: 40px;
+    border: 1.85283px solid #E0DEDE;
+    border-radius: 4px;
+}
+
+.feedback__form-tel {
+    max-width: 216px;
+    width: 100%;
+    height: 40px;
+    border: 1.85283px solid #E0DEDE;
+    border-radius: 4px;
+}
+
+.feedback__form-email {
+    max-width: 544px;
+    width: 100%;
+    height: 40px;
+    border: 1.85283px solid #E0DEDE;
+    border-radius: 4px;
+    padding: 0;
+}
+
+.feedback__form-message {
+    min-height: 69px;
+    max-width: 544px;
+    width: 100%;
+    border: 1.85283px solid #E0DEDE;
+    border-radius: 4px;
+}
+
+
+/* Модификаторы */
+
+.name_mod {
+    max-width: 301px;
+    width: 100%;
+    
+}
+
+.tel_mod {
+    max-width: 216px;
+    width: 100%;
+    height: 40px;
+}
+
+.email_mod {
+    max-width: 544px;
+    width: 100%;
+    height: 40px;
+}  
