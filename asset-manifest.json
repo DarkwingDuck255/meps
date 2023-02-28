@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.6759ea34.css",
-    "main.js": "/static/js/main.0799b6d2.js",
+    "main.css": "/static/css/main.8880ae4e.css",
+    "main.js": "/static/js/main.9002576c.js",
     "static/js/787.898f8373.chunk.js": "/static/js/787.898f8373.chunk.js",
     "static/media/slogan-background.svg": "/static/media/slogan-background.0f69ac04ba16047f4cc0.svg",
     "static/media/partnership-header-img.png": "/static/media/partnership-header-img.be770c0a6bcc6ace669f.png",
@@ -72,12 +72,12 @@
     "static/media/close-btn.svg": "/static/media/close-btn.7d97a5216be59bddc2bf.svg",
     "static/media/list-img.svg": "/static/media/list-img.fc4047fb3873c6a6aef8.svg",
     "static/media/list-style.svg": "/static/media/list-style.254b6755ad445af58b26.svg",
-    "main.6759ea34.css.map": "/static/css/main.6759ea34.css.map",
-    "main.0799b6d2.js.map": "/static/js/main.0799b6d2.js.map",
+    "main.8880ae4e.css.map": "/static/css/main.8880ae4e.css.map",
+    "main.9002576c.js.map": "/static/js/main.9002576c.js.map",
     "787.898f8373.chunk.js.map": "/static/js/787.898f8373.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6759ea34.css",
-    "static/js/main.0799b6d2.js"
+    "static/css/main.8880ae4e.css",
+    "static/js/main.9002576c.js"
   ]
 }
