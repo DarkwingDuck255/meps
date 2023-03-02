@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.8880ae4e.css",
-    "main.js": "/static/js/main.9002576c.js",
+    "main.css": "/static/css/main.f400ff42.css",
+    "main.js": "/static/js/main.6dcad3dc.js",
     "static/js/787.898f8373.chunk.js": "/static/js/787.898f8373.chunk.js",
     "static/media/slogan-background.svg": "/static/media/slogan-background.0f69ac04ba16047f4cc0.svg",
     "static/media/partnership-header-img.png": "/static/media/partnership-header-img.be770c0a6bcc6ace669f.png",
@@ -24,6 +24,7 @@
     "static/media/partnership-three.png": "/static/media/partnership-three.fba3a0a6f1a1ca69e030.png",
     "static/media/partnership-four.png": "/static/media/partnership-four.bf767c0575d873eb7c96.png",
     "static/media/ktp.png": "/static/media/ktp.0ffd775be5b46a75857f.png",
+    "static/media/404.svg": "/static/media/404.7f0552148c328975d34dad01dd8a1df6.svg",
     "static/media/wind-supply.png": "/static/media/wind-supply.70b4bf847a65e691f78c.png",
     "static/media/time2.svg": "/static/media/time2.ce863c2244f6eacc02644717222f3491.svg",
     "static/media/meps-group.svg": "/static/media/meps-group.b5b51571b35b624e44412493252a4934.svg",
@@ -72,12 +73,12 @@
     "static/media/close-btn.svg": "/static/media/close-btn.7d97a5216be59bddc2bf.svg",
     "static/media/list-img.svg": "/static/media/list-img.fc4047fb3873c6a6aef8.svg",
     "static/media/list-style.svg": "/static/media/list-style.254b6755ad445af58b26.svg",
-    "main.8880ae4e.css.map": "/static/css/main.8880ae4e.css.map",
-    "main.9002576c.js.map": "/static/js/main.9002576c.js.map",
+    "main.f400ff42.css.map": "/static/css/main.f400ff42.css.map",
+    "main.6dcad3dc.js.map": "/static/js/main.6dcad3dc.js.map",
     "787.898f8373.chunk.js.map": "/static/js/787.898f8373.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8880ae4e.css",
-    "static/js/main.9002576c.js"
+    "static/css/main.f400ff42.css",
+    "static/js/main.6dcad3dc.js"
   ]
 }
