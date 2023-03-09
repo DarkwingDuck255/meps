@@ -1,12 +1,13 @@
 import Main from '../Main/Main';
-import { useNavigate, Route, Routes, useLocation } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 import './App.css';
 import Partnership from '../Partnership/Partnership';
 import Machinery from '../Machinery/Machinery';
 import { useEffect } from 'react';
 import ServicesPage from '../ServicesPage/ServicesPage';
-import ContactUs from '../ContactUs/ContactUs';
+// import ContactUs from '../ContactUs/ContactUs';
 import ContactsPage from '../ContactsPage/ContactsPage';
+import NotFound from '../NotFound/NotFound';
 
 
 function App() {
@@ -37,6 +38,10 @@ function App() {
 
         <Route path='/contacts' element={
           <ContactsPage />
+        } />
+
+        <Route path='*' element={
+          <NotFound />
         } />
       </Routes>
     </div>
