@@ -8,14 +8,14 @@ function errCheck(res) {
     return Promise.reject(`Ошибка API -> ${res.status}`)
 }
 
-export function sendFeedback({ name, email, company, tel, text }) {
+export function sendFeedback({ name, tel }) {
     return fetch(`${baseUrl}/`, {
         method: 'POST',
         headers: {
             // 'Accept': "application/json",
             "Content-Type": "application/json"
         },
-        body: JSON.stringify({ name, email, company, tel, text })
+        body: JSON.stringify({ name, tel })
     })
         .then((res) => {
             return errCheck(res)

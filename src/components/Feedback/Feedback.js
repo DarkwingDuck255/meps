@@ -13,7 +13,7 @@ function Feedback() {
     const [email, setEmail] = useState('');
     const [company, setCompany] = useState('');
     const [tel, setTel] = useState('');
-    const [err, setErr] = useState('');
+    // const [err, setErr] = useState('');
 
     const {
         register,
@@ -48,9 +48,9 @@ function Feedback() {
         }
     }
 
-    function onSubmitFeedback({ name, email, company, tel, text }) {
+    function onSubmitFeedback(data) {
 
-        Api.sendFeedback({ name: name, email: email, company: company, tel: tel, text: text })
+        Api.sendFeedback(data)
             // .then(res => setText(''), setName(''), setEmail(''))
             .catch(err => {
                 console.log('ошибка, брат', err)
@@ -58,11 +58,16 @@ function Feedback() {
             })
     }
 
-    function sendMsg(evt) {
-        evt.preventDefault()
-        onSubmitFeedback({ name, email, company, tel, text })
+    function sendMsg(data) {
+        // evt.preventDefault()
+        onSubmitFeedback(data)
         // setName('')
     }
+    // const intialValues = {
+    //     name: "",
+    //     tel: "",
+    //     email: "",
+    //   };
 
     return (
         <div className='feedback__wrap'>
@@ -86,20 +91,23 @@ function Feedback() {
                     <h3 className='feedback__form-header'>
                         Отправить нам сообщение
                     </h3>
-                    <form className='feedback__form' onSubmit={sendMsg}>
+                    <form className='feedback__form' onSubmit={handleSubmit(sendMsg)}>
                         <div className='feedback__form-name-tel-wrap'>
                             <div className='feedback__form-input-wrap name_mod'>
-                                <label className='feedback__form-name-label' for='name' >
+                                <label className='feedback__form-name-label' htmlFor='name' >
                                     Имя
                                 </label>
-                                <input className='feedback__form-name' id='name' type='name' required name='name' autoComplete='false' onChange={handleNameInput} {...register('name', { validate: (value) => value.length > 2 && value.length < 30 })} />
+                                <input className='feedback__form-name' id='name' type='name' required name='name' autoComplete='off'
+                                    {...register("name", { validate: (value) => value.length > 2 && value.length < 30 })} />
                                 {errors.name && <span>мудак!</span>}
                             </div>
                             <div className='feedback__form-input-wrap tel_mod'>
                                 <label className='feedback__form-name-label' htmlFor='tel'>
                                     Телефон
                                 </label>
-                                <input className='feedback__form-tel' id='tel' type='number' maxLength='20' name='tel' required onChange={handleTelInput} />
+                                <input className='feedback__form-tel' id='tel' type='number' name='tel' required onChange={handleTelInput}
+                                    {...register("tel", { validate: (value) => value.length <= 20 })} />
+                                    {errors.tel ? <span>мудак, телефон!</span> : <span>збс</span>}
                             </div>
                         </div>
                         <div className='feedback__form-input-wrap other-input_mod'>
