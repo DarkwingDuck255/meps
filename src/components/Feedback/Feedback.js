@@ -18,6 +18,7 @@ function Feedback() {
     const {
         register,
         handleSubmit,
+        reset,
         formState: { errors }
     } = useForm();
 
@@ -37,9 +38,6 @@ function Feedback() {
         setTel(evt.target.value)
     }
 
-    // function handleTextInput(evt) {
-    //     setText(evt.target.value)
-    // }
 
     function handleTextAreaChange(event) {
         const value = event.target.value;
@@ -51,23 +49,18 @@ function Feedback() {
     function onSubmitFeedback(data) {
 
         Api.sendFeedback(data)
-            // .then(res => setText(''), setName(''), setEmail(''))
+            // .then(res => evt.target.reset())
             .catch(err => {
-                console.log('ошибка, брат', err)
+                console.log(err)
                 // setIsErrMsg(true)
             })
     }
 
     function sendMsg(data) {
-        // evt.preventDefault()
+
         onSubmitFeedback(data)
         // setName('')
     }
-    // const intialValues = {
-    //     name: "",
-    //     tel: "",
-    //     email: "",
-    //   };
 
     return (
         <div className='feedback__wrap'>
@@ -107,27 +100,34 @@ function Feedback() {
                                 </label>
                                 <input className='feedback__form-tel' id='tel' type='number' name='tel' required onChange={handleTelInput}
                                     {...register("tel", { validate: (value) => value.length <= 20 })} />
-                                    {errors.tel ? <span>мудак, телефон!</span> : <span>збс</span>}
+                                {errors.tel ? <span>мудак, телефон!</span> : ''}
                             </div>
                         </div>
                         <div className='feedback__form-input-wrap other-input_mod'>
                             <label className='feedback__form-name-label' htmlFor='email'>
                                 E-mail
                             </label>
-                            <input className='feedback__form-email' pattern={emailPattern} type='email' name='email' id='email' required onChange={handleEmailInput} />
+                            <input className='feedback__form-email' pattern={emailPattern} type='email' name='email' id='email' required onChange={handleEmailInput}
+                                {...register('email', { validate: (value) => value.pattern })} />
+                            {errors.email ? <span>мудак, email!</span> : ''}
                         </div>
                         <div className='feedback__form-input-wrap other-input_mod'>
                             <label className='feedback__form-name-label' htmlFor='company'>
                                 Компания
                             </label>
-                            <input className='feedback__form-comany' name='company' type='text' id='company' required onChange={handleCompanyInput} />
+                            <input className='feedback__form-comany' name='company' type='text' id='company' required onChange={handleCompanyInput}
+                                {...register('company')} />
+                            {errors.company ? <span>мудак, company!</span> : ''}
                         </div>
                         <div className='feedback__form-input-wrap textarea_mod'>
                             <label className='feedback__form-name-label' htmlFor='message'>
                                 Сообщение
                             </label>
                             <span className='feedback__form-message-letter-count'>{text.length}/{MAX_TEXT_LENGTH}</span>
-                            <textarea className='feedback__form-message' type='text' id='message' name='message' maxLength='500' minLength='100' required onChange={handleTextAreaChange} value={text} />
+                            <textarea className='feedback__form-message' type='text' id='message' name='message' maxLength='500' minLength='100' required onChange={handleTextAreaChange} value={text}
+                                // {...register('message')}
+                                />
+                            {/* {errors.message && <span>мудак!</span>} */}
                         </div>
 
 
