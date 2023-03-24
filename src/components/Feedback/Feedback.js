@@ -3,11 +3,13 @@ import './Feedback.css';
 import * as Api from '../../utils/Api.js';
 import { useForm } from "react-hook-form";
 import useFormWithValidation from '../../utils/formValidate'
+import meme from '../../images/meme.jpg'
 
 function Feedback() {
 
 
     const emailPattern = '[a-z0-9]+@[a-z]+\.[a-z]{2,3}'
+    const telPattern = '^(?:(?:\+?1\s*(?:[.-]\s*)?)?(?:\(\s*([2-9]1[02-9]|[2-9][02-8]1|[2-9][02-8][02-9])\s*\)|([2-9]1[02-9]|[2-9][02-8]1|[2-9][02-8][02-9]))\s*(?:[.-]\s*)?)?([2-9]1[02-9]|[2-9][02-9]1|[2-9][02-9]{2})\s*(?:[.-]\s*)?([0-9]{4})(?:\s*(?:#|x\.?|ext\.?|extension)\s*(\d+))?$'
     const MAX_TEXT_LENGTH = 500;
     const [text, setText] = useState("");
     const form = useRef();
@@ -57,8 +59,8 @@ function Feedback() {
     }
 
     function onSubmitFeedback(data) {
-        console.log({ name: data.name.value, tel: data.tel.value, email: data.email.value, company: data.company.value, text: data.message.value})
-        Api.sendFeedback({ name: data.name.value, tel: data.tel.value, email: data.email.value, company: data.company.value, text: data.message.value})
+        console.log({ name: data.name.value, tel: data.tel.value, email: data.email.value, company: data.company.value, text: data.message.value })
+        Api.sendFeedback({ name: data.name.value, tel: data.tel.value, email: data.email.value, company: data.company.value, text: data.message.value })
             // {email: values.email, name: values.name, tel: values.tel, company: values.company, message: values.message}
             // .then(res => evt.target.reset())
             .catch(err => {
@@ -69,9 +71,9 @@ function Feedback() {
 
     function sendMsg(data) {
         data.preventDefault()
-        const {name, tel, email, company, message} = form.current
+        const { name, tel, email, company, message } = form.current
         console.log(name.value, company.value)
-        onSubmitFeedback({ name, tel, email, company, message})
+        onSubmitFeedback({ name, tel, email, company, message })
 
         // setName('')
     }
@@ -98,7 +100,7 @@ function Feedback() {
                     <h3 className='feedback__form-header'>
                         Отправить нам сообщение
                     </h3>
-                    <form className='feedback__form' onSubmit={sendMsg} ref={form} id='feedbackForm'>
+                    <form className='feedback__form' onSubmit={sendMsg} ref={form} id='feedbackForm' noValidate>
                         <div className='feedback__form-name-tel-wrap'>
                             <div className='feedback__form-input-wrap name_mod'>
                                 <label className='feedback__form-name-label' htmlFor='name' >
@@ -109,17 +111,17 @@ function Feedback() {
                                 // {...register("name", { validate: (value) => value.length > 2 && value.length < 30 })} 
                                 />
                                 {/* {errors.name && <span>мудак!</span>} */}
-                                <span>{errors.name ? 'тобi пизда, имя' : ''}</span>
+                                <span>{values.name.length < 3 ? 'Введи имя, скотина!' : ''}</span>
                             </div>
                             <div className='feedback__form-input-wrap tel_mod'>
                                 <label className='feedback__form-name-label' htmlFor='tel'>
                                     Телефон
                                 </label>
-                                <input className='feedback__form-tel' id='tel' type='number' name='tel' required onChange={handleChange} values={values.tel}
+                                <input className='feedback__form-tel' id='tel' type='number' name='tel' required onChange={handleChange} values={values.tel} minLength='6'
                                 // {...register("tel", { validate: (value) => value.length <= 20 })} 
                                 />
                                 {/* {errors.tel ? <span>мудак, телефон!</span> : ''} */}
-                                <span>{errors.tel ? 'тобi пизда, телефон' : ''}</span>
+                                <span>{values.tel.length < 6 ? 'Введите пожалуста номер телефона.' : ''}</span>
                             </div>
                         </div>
                         <div className='feedback__form-input-wrap other-input_mod'>
@@ -132,7 +134,8 @@ function Feedback() {
                             // {...register('email', { validate: (value) => value.pattern })} 
                             />
                             {/* {errors.email ? <span>мудак, email!</span> : ''} */}
-                            <span>{errors.email ? 'тобi пизда, почта' : ''}</span>
+                            <span>{errors.email ? 'Введите пожалуйста ваш email' : ''}</span>
+                            
                         </div>
                         <div className='feedback__form-input-wrap other-input_mod'>
                             <label className='feedback__form-name-label' htmlFor='company'>
@@ -143,20 +146,22 @@ function Feedback() {
                             // {...register('company')} 
                             />
                             {/* {errors.company ? <span>мудак, company!</span> : ''} */}
-                            <span>{errors.company ? 'тобi пизда, компания' : ''}</span>
+                            <span>{errors.company ? 'Введите пожалуйста название вашей компании' : ''}</span>
+                           
                         </div>
                         <div className='feedback__form-input-wrap textarea_mod'>
                             <label className='feedback__form-name-label' htmlFor='message'>
                                 Сообщение
                             </label>
                             <span className='feedback__form-message-letter-count'>{text.length}/{MAX_TEXT_LENGTH}</span>
-                            <textarea className='feedback__form-message' type='text' id='message' name='message' maxLength='500' minLength='100' required value={text} onChange={handleTextAreaChange} values={values.message}
+                            <textarea className='feedback__form-message' type='text' id='message' name='message' maxLength='500' minLength='100' required onChange={handleTextAreaChange} values={values.message}
+                                value={text}
                             // onChange={handleTextAreaChange} 
                             // {...register('message')}
                             />
                             {/* {errors.message && <span>мудак!</span>} */}
-                            <span>{errors.message}</span>
-
+                            <span>{text.length < 100 ? 'Решил меня трахнуть? Да я сам тебя трахну! Ты, козел!' : ''}</span>
+                            <span>{text.length >= 100 && text.length <= 500 ? 'Все ОК' : ''}</span>
                         </div>
 
 
@@ -165,6 +170,7 @@ function Feedback() {
                         </button>
                     </form>
                 </div>
+                {values.company === 'мемный парень с пальцем у виска' ? <img className='meme' src={meme}/> : ''}
             </section>
         </div>
     );

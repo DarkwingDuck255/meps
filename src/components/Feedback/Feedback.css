@@ -207,6 +207,13 @@ label {
     color: #BABABA;
 }
 
+.meme {
+    position: absolute;
+    margin: auto;
+    display: flex;
+    z-index: 10;
+}
+
 
 /* Модификаторы */
 
@@ -234,3 +241,4 @@ label {
     width: 100%;
     margin-top: 7px;
 }
+

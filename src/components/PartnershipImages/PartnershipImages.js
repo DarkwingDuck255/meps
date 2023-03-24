@@ -3,7 +3,7 @@ import imageOne from '../../images/partnership-one.png';
 import imageTwo from '../../images/partnership-two.png';
 import imageThree from '../../images/partnership-three.png';
 import imageFour from '../../images/partnership-four.png';
-import { def } from '@vue/shared';
+
 
 function PartnershipImages() {
     return (
