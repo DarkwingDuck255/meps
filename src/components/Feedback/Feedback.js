@@ -66,7 +66,7 @@ function Feedback() {
         console.log({ name: data.name.value, tel: data.tel.value, email: data.email.value, company: data.company.value, text: data.message.value })
         Api.sendFeedback({ name: data.name.value, tel: data.tel.value, email: data.email.value, company: data.company.value, text: data.message.value })
             // {email: values.email, name: values.name, tel: values.tel, company: values.company, message: values.message}
-            // .then(res => evt.target.reset())
+            // .then(evt.target.reset())
             .catch(err => {
                 console.log(err)
                 // setIsErrMsg(true)
@@ -82,16 +82,6 @@ function Feedback() {
         // setName('')
     }
 
-    // document.forms.feedbackForm.addEventListener("invalid", function (e) {
-    //     e.preventDefault();
-    //     e.target.classList.add('invalid');
-    // }, true);
-
-    // document.forms.feedbackForm.addEventListener("focus", function (e) {
-    //     e.preventDefault();
-    //     [...e.target.form.querySelectorAll('.invalid')]
-    //         .forEach(elm => elm.classList.remove('invalid'));
-    // }, true);
 
     return (
         <div className='feedback__wrap'>
@@ -132,13 +122,13 @@ function Feedback() {
                                 <label className='feedback__form-name-label' htmlFor='tel'>
                                     Телефон
                                 </label>
-                                <input className={`feedback__form-tel ${errors.tel ? 'invalid' : ''}`} id='text' type='number' name='tel' required onChange={handleChange} values={values.tel} minLength='6' maxLength='20'
+                                <input className={`feedback__form-tel ${errors.tel ? 'invalid' : ''}`} id='tel' type='tel' name='tel' required onChange={handleChange} values={values.tel} minLength='6' maxLength='20'
                                 // {...register("tel", { validate: (value) => value.length <= 20 })} 
                                 />
                                 {/* {errors.tel ? <span className='invalid-text'>мудак, телефон!</span> : ''} */}
-                                <span className='invalid-text'>{values.tel.length < 6 ? 'Введите пожалуста номер телефона.' : ''}</span>
+                                <span className='invalid-text'>{errors.tel ? 'Введите пожалуста номер телефона.' : ''}</span>
 
-                                {/* пробный вариант для английского языка */}
+                                {/* пробный вариант для английского */}
                                 {/* <span className='invalid-text'>{values.tel.length < 6 && en ? 'Enter your phone number' : ''}</span> */}
 
                                 <span className='invalid-text'>{values.tel.length > 20 ?'Превышено максимальное количество цифр' : ''}</span>
