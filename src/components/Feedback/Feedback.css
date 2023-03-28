@@ -143,6 +143,10 @@ label {
     border-radius: 4px;
 }
 
+.feedback__form-name:focus {
+    outline: none;
+}
+
 .feedback__form-tel {
     max-width: 208px;
     width: 100%;
@@ -242,3 +246,14 @@ label {
     margin-top: 7px;
 }
 
+
+.invalid {
+    border-color: red;
+}
+
+.invalid-text {
+    color: red;
+}
+input:focus {
+    outline: none;
+}

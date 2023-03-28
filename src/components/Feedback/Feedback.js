@@ -1,4 +1,4 @@
-import { useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import './Feedback.css';
 import * as Api from '../../utils/Api.js';
 import { useForm } from "react-hook-form";
@@ -26,6 +26,10 @@ function Feedback() {
         company: '',
         message: '',
     })
+
+    useEffect(() =>{
+
+    }, [values.name || values.tel])
 
     // const {
     //     register,
@@ -78,6 +82,17 @@ function Feedback() {
         // setName('')
     }
 
+    // document.forms.feedbackForm.addEventListener("invalid", function (e) {
+    //     e.preventDefault();
+    //     e.target.classList.add('invalid');
+    // }, true);
+
+    // document.forms.feedbackForm.addEventListener("focus", function (e) {
+    //     e.preventDefault();
+    //     [...e.target.form.querySelectorAll('.invalid')]
+    //         .forEach(elm => elm.classList.remove('invalid'));
+    // }, true);
+
     return (
         <div className='feedback__wrap'>
             <section className="feedback">
@@ -100,54 +115,58 @@ function Feedback() {
                     <h3 className='feedback__form-header'>
                         Отправить нам сообщение
                     </h3>
-                    <form className='feedback__form' onSubmit={sendMsg} ref={form} id='feedbackForm' noValidate>
+                    <form className='feedback__form' name='feedbackForm' onSubmit={sendMsg} ref={form} id='feedbackForm'>
                         <div className='feedback__form-name-tel-wrap'>
                             <div className='feedback__form-input-wrap name_mod'>
                                 <label className='feedback__form-name-label' htmlFor='name' >
                                     Имя
                                 </label>
-                                <input className='feedback__form-name' id='name' type='name' required name='name' autoComplete='off' minLength='3' maxLength='40'
+                                <input className={`feedback__form-name ${errors.name ? 'invalid' : ''}`} id='name' type='name' required name='name' autoComplete='off' minLength='3' maxLength='40'
                                     onChange={handleChange} values={values.name}
                                 // {...register("name", { validate: (value) => value.length > 2 && value.length < 30 })} 
                                 />
-                                {/* {errors.name && <span>мудак!</span>} */}
-                                <span>{values.name.length < 3 ? 'Введи имя, скотина!' : ''}</span>
+                                {errors.name && <span className='invalid-text'>{errors.name}</span>}
+                                {/* <span>{values.name.length < 3 ? 'Введи имя, скотина!' : ''}</span> */}
                             </div>
                             <div className='feedback__form-input-wrap tel_mod'>
                                 <label className='feedback__form-name-label' htmlFor='tel'>
                                     Телефон
                                 </label>
-                                <input className='feedback__form-tel' id='tel' type='number' name='tel' required onChange={handleChange} values={values.tel} minLength='6'
+                                <input className={`feedback__form-tel ${errors.tel ? 'invalid' : ''}`} id='text' type='number' name='tel' required onChange={handleChange} values={values.tel} minLength='6' maxLength='20'
                                 // {...register("tel", { validate: (value) => value.length <= 20 })} 
                                 />
-                                {/* {errors.tel ? <span>мудак, телефон!</span> : ''} */}
-                                <span>{values.tel.length < 6 ? 'Введите пожалуста номер телефона.' : ''}</span>
+                                {/* {errors.tel ? <span className='invalid-text'>мудак, телефон!</span> : ''} */}
+                                <span className='invalid-text'>{values.tel.length < 6 ? 'Введите пожалуста номер телефона.' : ''}</span>
+
+                                {/* пробный вариант для английского языка */}
+                                {/* <span className='invalid-text'>{values.tel.length < 6 && en ? 'Enter your phone number' : ''}</span> */}
+
+                                <span className='invalid-text'>{values.tel.length > 20 ?'Превышено максимальное количество цифр' : ''}</span>
                             </div>
                         </div>
                         <div className='feedback__form-input-wrap other-input_mod'>
                             <label className='feedback__form-name-label' htmlFor='email'>
                                 E-mail
                             </label>
-                            <input className='feedback__form-email' pattern={emailPattern} type='email' name='email' id='email' required onChange=
-                                {handleChange} values={values.email}
+                            <input className={`feedback__form-email ${errors.email ? 'invalid' : ''}`} pattern={emailPattern} type='email' name='email' id='email' required onChange={handleChange} values={values.email}
                             // {handleEmailInput}
                             // {...register('email', { validate: (value) => value.pattern })} 
                             />
-                            {/* {errors.email ? <span>мудак, email!</span> : ''} */}
-                            <span>{errors.email ? 'Введите пожалуйста ваш email' : ''}</span>
-                            
+                            {errors.email ? <span className='invalid-text'>мудак, email!</span> : ''}
+                            {/* <span>{errors.email ? 'Введите пожалуйста ваш email' : ''}</span> */}
+
                         </div>
                         <div className='feedback__form-input-wrap other-input_mod'>
                             <label className='feedback__form-name-label' htmlFor='company'>
                                 Компания
                             </label>
-                            <input className='feedback__form-comany' name='company' type='text' id='company' required onChange={handleChange} values={values.company}
+                            <input className={`feedback__form-comany ${errors.company ? 'invalid' : ''}`} name='company' type='text' id='company' required onChange={handleChange} values={values.company} minLength='6'
                             // onChange={handleCompanyInput}
                             // {...register('company')} 
                             />
                             {/* {errors.company ? <span>мудак, company!</span> : ''} */}
-                            <span>{errors.company ? 'Введите пожалуйста название вашей компании' : ''}</span>
-                           
+                            <span className='invalid-text'>{errors.company ? 'Введите пожалуйста название вашей компании' : ''}</span>
+
                         </div>
                         <div className='feedback__form-input-wrap textarea_mod'>
                             <label className='feedback__form-name-label' htmlFor='message'>
@@ -160,8 +179,8 @@ function Feedback() {
                             // {...register('message')}
                             />
                             {/* {errors.message && <span>мудак!</span>} */}
-                            <span>{text.length < 100 ? 'Решил меня трахнуть? Да я сам тебя трахну! Ты, козел!' : ''}</span>
-                            <span>{text.length >= 100 && text.length <= 500 ? 'Все ОК' : ''}</span>
+                            <span>{text.length < 100 ? 'Минимальная длина сообщения - 100 символов' : ''}</span>
+                            {/* <span>{text.length >= 100 && text.length <= 500 ? 'Все ОК' : ''}</span> */}
                         </div>
 
 
@@ -170,7 +189,7 @@ function Feedback() {
                         </button>
                     </form>
                 </div>
-                {values.company === 'мемный парень с пальцем у виска' ? <img className='meme' src={meme}/> : ''}
+                {values.company === 'мемный парень с пальцем у виска' ? <img className='meme' src={meme} /> : ''}
             </section>
         </div>
     );
