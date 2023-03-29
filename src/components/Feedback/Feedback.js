@@ -13,6 +13,7 @@ function Feedback() {
     const MAX_TEXT_LENGTH = 500;
     const [text, setText] = useState("");
     const form = useRef();
+    const [captcha, setCaptcha] = useState(false)
 
     const { values, isValid, handleChange, errors } = useFormWithValidation({
         name: '',
@@ -53,6 +54,11 @@ function Feedback() {
 
 
         // setName('')
+    }
+
+    function handleRecaptchaChange(value) {
+        console.log("Captcha value:", value);
+        setCaptcha(true)
     }
 
 
@@ -146,11 +152,11 @@ function Feedback() {
                             {/* <span>{text.length >= 100 && text.length <= 500 ? 'Все ОК' : ''}</span> */}
                         </div>
                         <ReCAPTCHA
-                            sitekey="Your client site key"
-                            onChange={onChange}
+                            sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
+                            onChange={handleRecaptchaChange}
                         />
 
-                        <button className='feedback__form-submit' type='submit'>
+                        <button className='feedback__form-submit' type='submit' disabled={!captcha}>
                             Отправить сообщение
                         </button>
                     </form>
