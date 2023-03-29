@@ -4,6 +4,9 @@ import { Link } from 'react-router-dom';
 // import arrowButton from '../../images/arrow-to-top.svg';
 
 function Footer() {
+    function scrollToTop() {
+        window.scrollTo(0, 0)
+    }
     return (
         <section className='footer'>
             <nav className='footer__wrapper'>
@@ -36,7 +39,7 @@ function Footer() {
                     </a>
 
                 </div>
-                {/* <button className='footer__button-to-top'/> */}
+                <button className='footer__button-to-top' onClick={scrollToTop}/>
             </nav>
 
         </section>

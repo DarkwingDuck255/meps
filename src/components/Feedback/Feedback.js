@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import './Feedback.css';
+import ReCAPTCHA from "react-google-recaptcha";
 import * as Api from '../../utils/Api.js';
 import { useForm } from "react-hook-form";
 import useFormWithValidation from '../../utils/formValidate'
@@ -9,15 +10,9 @@ function Feedback() {
 
 
     const emailPattern = '[a-z0-9]+@[a-z]+\.[a-z]{2,3}'
-    const telPattern = '^(?:(?:\+?1\s*(?:[.-]\s*)?)?(?:\(\s*([2-9]1[02-9]|[2-9][02-8]1|[2-9][02-8][02-9])\s*\)|([2-9]1[02-9]|[2-9][02-8]1|[2-9][02-8][02-9]))\s*(?:[.-]\s*)?)?([2-9]1[02-9]|[2-9][02-9]1|[2-9][02-9]{2})\s*(?:[.-]\s*)?([0-9]{4})(?:\s*(?:#|x\.?|ext\.?|extension)\s*(\d+))?$'
     const MAX_TEXT_LENGTH = 500;
     const [text, setText] = useState("");
     const form = useRef();
-    // const [name, setName] = useState('');
-    // const [email, setEmail] = useState('');
-    // const [company, setCompany] = useState('');
-    // const [tel, setTel] = useState('');
-    // const [err, setErr] = useState('');
 
     const { values, isValid, handleChange, errors } = useFormWithValidation({
         name: '',
@@ -27,33 +22,9 @@ function Feedback() {
         message: '',
     })
 
-    useEffect(() =>{
+    useEffect(() => {
 
     }, [values.name || values.tel])
-
-    // const {
-    //     register,
-    //     handleSubmit,
-    //     reset,
-    //     formState: { errors }
-    // } = useForm();
-
-    // function handleNameInput(evt) {
-    //     setName(evt.target.value)
-    //     // evt.target.validationMessage(setErr)
-    // }
-    // function handleEmailInput(evt) {
-    //     setEmail(evt.target.value)
-    // }
-
-    // function handleCompanyInput(evt) {
-    //     setCompany(evt.target.value)
-    // }
-
-    // function handleTelInput(evt) {
-    //     setTel(evt.target.value)
-    // }
-
 
     function handleTextAreaChange(event) {
         const value = event.target.value;
@@ -65,8 +36,8 @@ function Feedback() {
     function onSubmitFeedback(data) {
         console.log({ name: data.name.value, tel: data.tel.value, email: data.email.value, company: data.company.value, text: data.message.value })
         Api.sendFeedback({ name: data.name.value, tel: data.tel.value, email: data.email.value, company: data.company.value, text: data.message.value })
-            // {email: values.email, name: values.name, tel: values.tel, company: values.company, message: values.message}
-            // .then(evt.target.reset())
+            .then(form.current.reset(), setText(''))
+
             .catch(err => {
                 console.log(err)
                 // setIsErrMsg(true)
@@ -78,6 +49,8 @@ function Feedback() {
         const { name, tel, email, company, message } = form.current
         console.log(name.value, company.value)
         onSubmitFeedback({ name, tel, email, company, message })
+        console.log(form)
+
 
         // setName('')
     }
@@ -105,7 +78,7 @@ function Feedback() {
                     <h3 className='feedback__form-header'>
                         Отправить нам сообщение
                     </h3>
-                    <form className='feedback__form' name='feedbackForm' onSubmit={sendMsg} ref={form} id='feedbackForm'>
+                    <form className='feedback__form' name='feedbackForm' onSubmit={sendMsg} ref={form} id='feedbackForm' noValidate>
                         <div className='feedback__form-name-tel-wrap'>
                             <div className='feedback__form-input-wrap name_mod'>
                                 <label className='feedback__form-name-label' htmlFor='name' >
@@ -131,7 +104,7 @@ function Feedback() {
                                 {/* пробный вариант для английского */}
                                 {/* <span className='invalid-text'>{values.tel.length < 6 && en ? 'Enter your phone number' : ''}</span> */}
 
-                                <span className='invalid-text'>{values.tel.length > 20 ?'Превышено максимальное количество цифр' : ''}</span>
+                                <span className='invalid-text'>{values.tel.length > 20 ? 'Превышено максимальное количество цифр' : ''}</span>
                             </div>
                         </div>
                         <div className='feedback__form-input-wrap other-input_mod'>
@@ -172,7 +145,10 @@ function Feedback() {
                             <span>{text.length < 100 ? 'Минимальная длина сообщения - 100 символов' : ''}</span>
                             {/* <span>{text.length >= 100 && text.length <= 500 ? 'Все ОК' : ''}</span> */}
                         </div>
-
+                        <ReCAPTCHA
+                            sitekey="Your client site key"
+                            onChange={onChange}
+                        />
 
                         <button className='feedback__form-submit' type='submit'>
                             Отправить сообщение
