@@ -6,14 +6,16 @@ import { useForm } from "react-hook-form";
 import useFormWithValidation from '../../utils/formValidate'
 import meme from '../../images/meme.jpg'
 
-function Feedback() {
+function Feedback(props) {
 
 
     const emailPattern = '[a-z0-9]+@[a-z]+\.[a-z]{2,3}'
     const MAX_TEXT_LENGTH = 500;
     const [text, setText] = useState("");
     const form = useRef();
-    const [captcha, setCaptcha] = useState(false)
+    const [captcha, setCaptcha] = useState(false);
+
+    // let [captchaToken, setCaptchaToken] = useState('');
 
     const { values, isValid, handleChange, errors } = useFormWithValidation({
         name: '',
@@ -22,10 +24,13 @@ function Feedback() {
         company: '',
         message: '',
     })
-
+    console.log(ReCAPTCHA.stoken)
     useEffect(() => {
-
-    }, [values.name || values.tel])
+        // if (ReCAPTCHA.stoken === null) {
+            setCaptcha(false)
+            console.log(ReCAPTCHA.stoken)
+        // }
+    }, [ReCAPTCHA.stoken])
 
     function handleTextAreaChange(event) {
         const value = event.target.value;
@@ -59,6 +64,9 @@ function Feedback() {
     function handleRecaptchaChange(value) {
         console.log("Captcha value:", value);
         setCaptcha(true)
+        if (value === null) {
+            setCaptcha(false)
+        }
     }
 
 
@@ -154,9 +162,11 @@ function Feedback() {
                         <ReCAPTCHA
                             sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
                             onChange={handleRecaptchaChange}
+                            // stoken={setCaptchaToken}
                         />
+                        {/* {console.log(captchaToken)} */}
 
-                        <button className='feedback__form-submit' type='submit' disabled={!captcha}>
+                        <button className={`feedback__form-submit ${captcha === true ? '' : 'feedback__form-submit_disabled'}`} type='submit' disabled={!captcha}>
                             Отправить сообщение
                         </button>
                     </form>

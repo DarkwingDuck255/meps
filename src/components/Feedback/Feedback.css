@@ -258,3 +258,8 @@ label {
 input:focus {
     outline: none;
 }
+
+.feedback__form-submit_disabled {
+    opacity: 0.3;
+    cursor:default;
+}
