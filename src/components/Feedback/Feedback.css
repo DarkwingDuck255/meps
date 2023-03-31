@@ -263,3 +263,15 @@ input:focus {
     opacity: 0.3;
     cursor:default;
 }
+
+.feedback__form-success-msg {
+    color: #009138;
+}
+
+.eedback__form-fail-msg {
+    color: red;
+}
+
+input {
+    padding-left: 16px;
+}

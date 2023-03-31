@@ -98,9 +98,9 @@ function AboutUs() {
                     <p className='about-us__contacts-services-text'>
                         Благодаря наличию партнерских отношений с производителями оборудования «MEPS» обеспечивает высокий уровень сервисного и эксплуатационного обслуживания. Важным преимуществом «MEPS» является использование оригинальных запасных частей и расходных материалов.
                     </p>
-                    <a href='#' className='about-us__contacts-services-link common__link'>
+                    <Link to='/services' className='about-us__contacts-services-link common__link'>
                         Подробнее
-                    </a>
+                    </Link>
                 </div>
             </div>
         </section>

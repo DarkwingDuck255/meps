@@ -11,12 +11,12 @@ function Footer() {
         <section className='footer'>
             <nav className='footer__wrapper'>
                 <div className='footer__container'>
-                    <Link to='/' className='footer__link common__link' href='#'>О нас</Link>
-                    <Link to='/partnership' className='footer__link common__link' href='#'>Партнерство</Link>
+                    <Link to='/' className='footer__link common__link'>О нас</Link>
+                    <Link to='/partnership' className='footer__link common__link'>Партнерство</Link>
                 </div>
                 <div className='footer__container'>
-                    <Link to='/machinery' className='footer__link common__link' href='#'>Оборудование</Link>
-                    <a className='footer__link common__link' href='#'>Услуги</a>
+                    <Link to='/machinery' className='footer__link common__link'>Оборудование</Link>
+                    <Link className='footer__link common__link' to='/services' >Услуги</Link>
                 </div>
                 <img src={logo} className='footer__logo' alt='логотип' />
                 <div className='footer__contacts'>
