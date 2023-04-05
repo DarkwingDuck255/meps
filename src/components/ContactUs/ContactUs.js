@@ -107,7 +107,7 @@ function ContactUs(props) {
                     <h3 className='feedback__form-header'>
                         Отправить нам сообщение
                     </h3>
-                    <form className='feedback__form' name='feedbackForm' onSubmit={sendMsg} ref={form} id='feedbackForm'>
+                    <form className='feedback__form feedback__form_popup-width' name='feedbackForm' onSubmit={sendMsg} ref={form} id='feedbackForm'>
                         <div className='feedback__form-name-tel-wrap'>
                             <div className='feedback__form-input-wrap name_mod'>
                                 <label className='feedback__form-name-label' htmlFor='name' >

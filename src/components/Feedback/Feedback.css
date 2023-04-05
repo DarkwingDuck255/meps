@@ -114,6 +114,8 @@ label {
     gap: 29px;
 }
 
+
+
 /* .feedback__form:last-child {
     gap: 0;
 } */
@@ -124,8 +126,8 @@ label {
     flex-wrap: wrap;
     max-width: 544px;
     width: 100%;
-    /* gap: 27px; */
-    justify-content: space-between;
+    gap: 27px;
+    /* justify-content: space-between; */
 }
 
 .feedback__form-input-wrap {
@@ -139,7 +141,7 @@ label {
 }
 
 .feedback__form-name {
-    max-width: 293px;
+    max-width: 281px;
     width: 100%;
     height: 34px;
     border: 1.85283px solid #E0DEDE;
@@ -151,7 +153,7 @@ label {
 }
 
 .feedback__form-tel {
-    max-width: 208px;
+    max-width: 196px;
     width: 100%;
     height: 34px;
     border: 1.85283px solid #E0DEDE;
@@ -159,7 +161,7 @@ label {
 }
 
 .feedback__form-email {
-    max-width: 536px;
+    max-width: 524px;
     width: 100%;
     height: 34px;
     border: 1.85283px solid #E0DEDE;
@@ -168,7 +170,7 @@ label {
 }
 
 .feedback__form-comany {
-    max-width: 536px;
+    max-width: 524px;
     width: 100%;
     height: 34px;
     border: 1.85283px solid #E0DEDE;
@@ -332,3 +334,6 @@ input {
     display: none;
 }
 
+.feedback__form_popup-width {
+    width: 100%;
+}
