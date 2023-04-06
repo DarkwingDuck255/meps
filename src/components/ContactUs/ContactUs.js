@@ -97,7 +97,7 @@ function ContactUs(props) {
                 </p>
             </div>
 
-            <div className={`feedback__popup-background ${feedback ? 'feedback__popup-background_visible' : ''}`} onClick={closeByClickOnOverlay}>
+            <div className={`feedback__popup-background ${feedback ? 'feedback__popup-background_visible' : ''}`} onMouseDown={closeByClickOnOverlay}>
                 <div className={`feedback__form-container ${feedback ? 'feedback__form-container_visible' : 'feedback__form-container_hidden'}`}>
                     <button className='feedback__form-close-btn' onClick={closeFeedback}/>
                     <div className='feedback__form-decoration'> 
