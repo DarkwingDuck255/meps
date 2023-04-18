@@ -78,6 +78,7 @@ function ContactUs(props) {
         // console.log(name.value, company.value)
         onSubmitFeedback({ name, tel, email, company, message })
         console.log(form)
+        sendMessageToTelegram()
     }
 
     function handleRecaptchaChange(value) {
@@ -86,6 +87,32 @@ function ContactUs(props) {
         if (value === null) {
             setCaptcha(false)
         }
+    }
+
+    // Функция отправки сообщения на бэк для последующей отправки в телеграм
+
+    function sendMessageToTelegram() {
+        const name = document.getElementById("name").value;
+        const email = document.getElementById("email").value;
+        const tel = document.getElementById("tel").value
+        const company = document.getElementById("company").value
+        const message = document.getElementById("message").value;
+        // const xhr = new XMLHttpRequest();
+        // xhr.open("POST", "/", true);
+        // xhr.setRequestHeader('Content-Type', 'application/json');
+        // xhr.send(JSON.stringify({ name: name, email: email, message: message}));
+
+        return fetch(`http://localhost:3001/send-msg`, {
+            method: 'POST',
+            headers: {
+                // 'Accept': "application/json",
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({ name: name, email: email, message: message, tel: tel, company: company }),
+        })
+            .then((res) => {
+                return console.log(res)
+            })
     }
 
     return (
@@ -99,8 +126,8 @@ function ContactUs(props) {
 
             <div className={`feedback__popup-background ${feedback ? 'feedback__popup-background_visible' : ''}`} onMouseDown={closeByClickOnOverlay}>
                 <div className={`feedback__form-container ${feedback ? 'feedback__form-container_visible' : 'feedback__form-container_hidden'}`}>
-                    <button className='feedback__form-close-btn' onClick={closeFeedback}/>
-                    <div className='feedback__form-decoration'> 
+                    <button className='feedback__form-close-btn' onClick={closeFeedback} />
+                    <div className='feedback__form-decoration'>
                         <div className='feedback__form-decoration-second' />
 
                     </div>
@@ -157,7 +184,8 @@ function ContactUs(props) {
                             />
                         </div>
                         <ReCAPTCHA
-                            sitekey="6LfrXjkUAAAAAK0aMCuIZ3uN6t18S8VIZuYkjA8Y"
+                            // sitekey="6LfrXjkUAAAAAK0aMCuIZ3uN6t18S8VIZuYkjA8Y"
+                            sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
                             onChange={handleRecaptchaChange}
                         />
 
