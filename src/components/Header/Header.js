@@ -2,6 +2,7 @@ import * as React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 // import { Link, useLocation } from 'react-router-dom';
 import logo from '../../images/logo.svg';
+import russian from '../../images/russian.svg';
 import './Header.css';
 
 function Header() {
@@ -22,6 +23,11 @@ function Header() {
                     <Link className={`header__nav-link common__link ${currentUrl.pathname === '/services' ? 'common__current-link' : ''}`} to='/services'>Услуги</Link>
                     {/* <a className="header__nav-link common__link" href='#'>Контакты</a> */}
                 </nav>
+
+                <div className='header__lang'>
+                    <img src={russian} className='header__lang-russian'/>
+                    <p className='header__lang-text'>RU</p>
+                </div>
             </div>
         </section >
     )

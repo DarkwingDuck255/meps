@@ -59,3 +59,20 @@
     font-size: 20px;
     line-height: 28px;
 }
+
+.header__lang {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 80px;
+    height: 40px;
+    align-items: center;
+    align-self: center;
+    gap: 9px;
+    font-family: 'Fira Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    cursor: pointer;
+}
