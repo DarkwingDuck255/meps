@@ -13,7 +13,7 @@ function Benefits() {
             </div>
             <div className='benefits__item'>
                 <img src={gear} className='benefits__item-icon' alt='квадраты разных размеров' />
-                <p className='benefits__item-description'>Самый высокий КПД среди аналогичичных установк</p>
+                <p className='benefits__item-description'>Самый высокий КПД среди аналогичичных установок</p>
             </div>
             <div className='benefits__item'>
                 <img src={volume} className='benefits__item-icon' alt='квадраты разных размеров' />

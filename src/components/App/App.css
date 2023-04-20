@@ -2,6 +2,17 @@
   text-decoration: none;
   width: fit-content;
 }
+
+.common__link:hover {
+  color: #B0001E;
+  transition: all .4s;
+  text-decoration: underline;
+}
+
+.common__current-link {
+  color: #B0001E;
+  text-decoration: underline;
+}
 .App {
   display: flex;
   flex-direction: column;

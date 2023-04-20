@@ -1,0 +1,12 @@
+.partnership-section__images {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #0084C7;
+}
+
+.partnership-section__pic {
+    margin: 48px 0 48px 0;
+}

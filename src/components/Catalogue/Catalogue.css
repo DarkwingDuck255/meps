@@ -1,0 +1,76 @@
+.catalogue {
+    width: 100%;
+    background-color: #F6F8FA;
+    font-family: 'Fira Sans';
+    font-style: normal;
+}
+
+.catalogue__header {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 52px;
+    color: #0084C7;
+    display: flex;
+    align-self: center;
+    max-width: 429px;
+    width: 100%;
+    margin: 28px auto 11px auto;
+}
+
+.catalogue__cards {
+    display: grid;
+    max-width: 1156px;
+    grid-template-columns: repeat(auto-fill, minmax(372px, 1fr));
+    grid-template-rows: repeat(2, 1fr);
+    justify-items: center;
+    margin: 0 auto 72px auto;
+}
+
+.catalogue__card {
+    display: flex;
+    flex-direction: column;
+    width: 372px;
+    height: 490px;
+    background: #FFFFFF;
+    border-radius: 0px 0px 8px 8px;
+    margin: 29px 20px 0 0;
+    align-content: center;
+    filter: drop-shadow(0px 11.695px 32.1614px rgba(39, 104, 118, 0.1));
+    position: relative;
+}
+
+.catalogue__card-image {
+    height: 247px;
+    width: 372px;
+}
+
+.catalogue__card-header {
+    margin: 16px 0 0 16px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #0084C7;
+}
+
+.catalogue__card-description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    margin: 8px auto 0 auto;
+    max-width: 339px;
+}
+
+.catalogue__card-popup-button {
+    border: none;
+    display: flex;
+    align-self: flex-end;
+    background-color: transparent;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #0072CE;
+    cursor: pointer;
+    position: absolute;
+    bottom: 28px;
+    right: 26px;
+}

@@ -1,18 +1,22 @@
 import './Footer.css';
 import logo from '../../images/logo.svg'
+import { Link } from 'react-router-dom';
 // import arrowButton from '../../images/arrow-to-top.svg';
 
 function Footer() {
+    function scrollToTop() {
+        window.scrollTo(0, 0)
+    }
     return (
         <section className='footer'>
-            <div className='footer__wrapper'>
+            <nav className='footer__wrapper'>
                 <div className='footer__container'>
-                    <a className='footer__link common__link' href='#'>О нас</a>
-                    <a className='footer__link common__link' href='#'>Партнерство</a>
+                    <Link to='/' className='footer__link common__link'>О нас</Link>
+                    <Link to='/partnership' className='footer__link common__link'>Партнерство</Link>
                 </div>
                 <div className='footer__container'>
-                    <a className='footer__link common__link' href='#'>Оборудование</a>
-                    <a className='footer__link common__link' href='#'>Услуги</a>
+                    <Link to='/machinery' className='footer__link common__link'>Оборудование</Link>
+                    <Link className='footer__link common__link' to='/services' >Услуги</Link>
                 </div>
                 <img src={logo} className='footer__logo' alt='логотип' />
                 <div className='footer__contacts'>
@@ -35,8 +39,8 @@ function Footer() {
                     </a>
 
                 </div>
-                {/* <button className='footer__button-to-top'/> */}
-            </div>
+                <button className='footer__button-to-top' onClick={scrollToTop}/>
+            </nav>
 
         </section>
     )

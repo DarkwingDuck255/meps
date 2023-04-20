@@ -1,5 +1,6 @@
 import './PartnershipText.css';
 import partnershipHeaderImg from '../../images/partnership-header-img.png';
+
 function PartnershipText() {
     return (
         <section className="partnership-section">
@@ -10,7 +11,7 @@ function PartnershipText() {
                         Партнерство с Mitsubishi
                     </h2>
                     <p className="partnership-section__header-intro">
-                        «MIDDLE EAST POWER SOLUTIONS» является официальным дилером компании. Mitsubishi Turbocharger and Engine Europe b.V.
+                        «MIDDLE EAST POWER SOLUTIONS» является официальным партнером и сервисным представителем компании Mitsubishi Turbocharger and Engine Europe b.V. в Узбекистане и странах СНГ.
                     </p>
                 </div>
             </div>
@@ -20,21 +21,16 @@ function PartnershipText() {
                     Поставщик газопоршневых и дизельных двигателей
                 </h3>
                 <p className='partnership-section__article-text'>
-
                     Благодаря партнерским отношениям с компанией Mitsubishi Turbocharger and Engine Europe b.V. мы можем обеспечить высокий уровень сервисного и эксплуатационного обслуживания.
                 </p>
 
                 <p className='partnership-section__article-text'>
                     Наличие пополняемого склада запасных частей на территории Узбекистана позволит существенно сократить сроки ремонта
                     и технического обслуживания.
-
-
                 </p>
 
                 <p className='partnership-section__article-text'>
-                    Оборудование Mitsubishi создано для работы даже в самых тяжелых условиях и известно своей эффективностью и надежностью. Mitsubishi heavy industries уделяет серьезное внимание развитию и улучшению своих двигателей. Дизельные и газовые генераторные установки Mitsubishi обеспечивают высокую мощность и надежность и оснащены современными системами управления.
-
-
+                    Оборудование Mitsubishi создано для работы даже в самых тяжелых условиях и известно своей эффективностью и надежностью. Mitsubishi Heavy Industries уделяет серьезное внимание развитию и улучшению своих двигателей. Дизельные и газовые генераторные установки Mitsubishi обеспечивают высокую мощность и надежность и оснащены современными системами управления.
                 </p>
 
                 <p className='partnership-section__article-text'>
@@ -45,6 +41,8 @@ function PartnershipText() {
                     для своих клиентов на протяжении многих лет.
                 </p>
             </div>
+
+
         </section>
     )
 }
