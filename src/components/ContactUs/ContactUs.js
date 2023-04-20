@@ -184,7 +184,11 @@ function ContactUs(props) {
                             />
                         </div>
                         <ReCAPTCHA
+
+                        // код сайта 
                             // sitekey="6LfrXjkUAAAAAK0aMCuIZ3uN6t18S8VIZuYkjA8Y"
+
+                            // код для localhost
                             sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
                             onChange={handleRecaptchaChange}
                         />
