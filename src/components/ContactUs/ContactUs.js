@@ -102,7 +102,7 @@ function ContactUs(props) {
         // xhr.setRequestHeader('Content-Type', 'application/json');
         // xhr.send(JSON.stringify({ name: name, email: email, message: message}));
 
-        return fetch(`http://localhost:3001/send-msg`, {
+        return fetch(`http://meps.uz/send-msg`, {
             method: 'POST',
             headers: {
                 // 'Accept': "application/json",
