@@ -105,7 +105,7 @@ function ContactUs(props) {
         return fetch(`http://meps.uz/send-msg`, {
             method: 'POST',
             headers: {
-                // 'Accept': "application/json",
+                'Accept': "application/json",
                 "Content-Type": "application/json"
             },
             body: JSON.stringify({ name: name, email: email, message: message, tel: tel, company: company }),
