@@ -1,4 +1,4 @@
-const baseUrl = 'http://localhost:3001'
+const baseUrl = 'http://meps.uz'
 
 function errCheck(res) {
     if (res.ok) {
