@@ -1,4 +1,4 @@
-const baseUrl = 'http://meps.uz'
+const baseUrl = 'wwww.meps.uz'
 
 function errCheck(res) {
     if (res.ok) {
