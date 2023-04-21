@@ -1,4 +1,4 @@
-const baseUrl = 'wwww.meps.uz'
+// const baseUrl = 'www.meps.uz'
 
 function errCheck(res) {
     if (res.ok) {
@@ -9,7 +9,8 @@ function errCheck(res) {
 }
 
 export function sendFeedback({ name, tel, email, company, text }) {
-    return fetch(`${baseUrl}/`, {
+    // ${baseUrl}
+    return fetch(`/`, {
         method: 'POST',
         headers: {
             'Accept': "application/json",
