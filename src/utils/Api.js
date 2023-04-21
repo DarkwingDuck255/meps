@@ -10,7 +10,7 @@ function errCheck(res) {
 
 export function sendFeedback({ name, tel, email, company, text }) {
     // ${baseUrl}
-    return fetch(`/send-email`, {
+    return fetch(`/api/send-email`, {
         method: 'POST',
         headers: {
             'Accept': "application/json",
