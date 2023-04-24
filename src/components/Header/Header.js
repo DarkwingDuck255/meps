@@ -21,7 +21,7 @@ function Header() {
                     <Link className={`header__nav-link common__link  ${currentUrl.pathname === '/partnership' ? 'common__current-link' : ''}`} to='/partnership'>Партнерство</Link>
                     <Link className={`header__nav-link common__link ${currentUrl.pathname === '/machinery' ? 'common__current-link' : ''}`} to='/machinery'>Оборудование</Link>
                     <Link className={`header__nav-link common__link ${currentUrl.pathname === '/services' ? 'common__current-link' : ''}`} to='/services'>Услуги</Link>
-                    {/* <a className="header__nav-link common__link" href='#'>Контакты</a> */}
+                    <Link className={`header__nav-link common__link ${currentUrl.pathname === '/contacts' ? 'common__current-link' : ''}`} to='/contacts'>Контакты</Link>
                 </nav>
 
                 <div className='header__lang'>
