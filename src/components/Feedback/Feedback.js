@@ -9,7 +9,7 @@ import meme from '../../images/meme.jpg'
 function Feedback() {
 
 
-    const emailPattern = '[a-z0-9]+@[a-z]+\.[a-z]{2,3}'
+    const emailPattern = '^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$'
     const MAX_TEXT_LENGTH = 500;
     const [text, setText] = useState("");
     const form = useRef();
