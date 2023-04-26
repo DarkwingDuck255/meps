@@ -9,7 +9,8 @@ import meme from '../../images/meme.jpg'
 
 function ContactUs(props) {
     const [feedback, setFeedback] = useState(false)
-    const emailPattern = '[a-z0-9]+@[a-z]+\.[a-z]{2,3}'
+    // const emailPattern = '[a-z0-9]+@[a-z]+\.[a-z]{2,3}'
+    const emailPattern = '/^[A-Z0-9._%+-]+@[A-Z0-9-]+.+.[A-Z]{2,4}$/i'
     const MAX_TEXT_LENGTH = 500;
     const [text, setText] = useState("");
     const form = useRef();
