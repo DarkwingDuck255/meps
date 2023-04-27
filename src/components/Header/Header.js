@@ -7,9 +7,17 @@ import './Header.css';
 
 function Header() {
     const currentUrl = useLocation();
+    const [menuLang, setMenuLang] = React.useState(false);
 
 
-    console.log(currentUrl.pathname)
+    function openLangMenu() {
+        setMenuLang(true)
+    }
+    
+    function closeLangMenu() {
+        setMenuLang(false)
+    }
+
     return (
         <section className='header__wrapp'>
             <div className="header">
@@ -24,9 +32,23 @@ function Header() {
                     {/* <a className="header__nav-link common__link" href='#'>Контакты</a> */}
                 </nav>
 
-                <div className='header__lang'>
-                    <img src={russian} className='header__lang-russian'/>
+                <div className='header__lang' onMouseOver={openLangMenu} onMouseLeave={closeLangMenu}>
+                    <img src={russian} className='header__lang-russian' />
                     <p className='header__lang-text'>RU</p>
+                </div>
+                <div className={`header__change-lang-menu ${menuLang ? 'header__change-lang-menu_visible' : ''}`} onMouseLeave={closeLangMenu} onMouseOver={openLangMenu}>
+                    <div className='header__change-lang-menu__option'>
+                        <img src={russian} className='header__lang-russian' />
+                        <p className='header__lang-text'>EN</p>
+                    </div>
+                    <div className='header__change-lang-menu__option'>
+                        <img src={russian} className='header__lang-russian' />
+                        <p className='header__lang-text'>UZ</p>
+                    </div>
+                    {/* <div className='header__change-lang-menu__option'>
+                        <img src={russian} className='header__lang-russian' />
+                        <p className='header__lang-text'>UZ</p>
+                    </div> */}
                 </div>
             </div>
         </section >
