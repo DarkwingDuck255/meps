@@ -1,6 +1,5 @@
 import * as React from 'react';
 import { Link, useLocation } from 'react-router-dom';
-// import { Link, useLocation } from 'react-router-dom';
 import logo from '../../images/logo.svg';
 import russian from '../../images/russian.svg';
 import './Header.css';
@@ -30,14 +29,12 @@ function Header({ setCurrentLocale, currentLocale }, props) {
     function changeLangUZ() {
         localStorage.setItem('lang', 'uz')
         setCurrentLocale('uz')
-        // console.log(currentLang)
         console.log(localStorage.getItem('lang'))
     }
 
     function changeLangRU() {
         localStorage.setItem('lang', 'ru')
         setCurrentLocale('ru')
-        // console.log(currentLang)
         console.log(localStorage.getItem('lang'))
     }
 
@@ -69,17 +66,6 @@ function Header({ setCurrentLocale, currentLocale }, props) {
 
                     </Link>
                 </nav>
-
-
-                {/* <div className={`header__lang ${currentLocale === 'ru' ? 'header__lang_visible' : ''}`} onMouseOver={openLangMenu} onMouseLeave={closeLangMenu}>
-                    <img src={russian} className='header__lang-russian' />
-                    <p className='header__lang-text'>Rus</p>
-                </div>
-
-                <div className={`header__lang ${currentLocale = 'en' ? 'header__lang_visible' : ''}`} onMouseOver={openLangMenu} onMouseLeave={closeLangMenu}>
-                    <img src={russian} className='header__lang-russian' />
-                    <p className='header__lang-text'>En</p>
-                </div> */}
 
                 <div className={currentLocale === 'ru' ? 'header__lang header__lang_visible' : 'header__lang'} onMouseOver={openLangMenu} onMouseLeave={closeLangMenu}>
                     <img src={russian} className='header__lang-russian' />
