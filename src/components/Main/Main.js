@@ -23,12 +23,23 @@ function Main({ currentLocale, setCurrentLocale }) {
             <Header
                 currentLocale={currentLocale}
                 setCurrentLocale={setCurrentLocale}
-            // setCurrentLocale={setCurrentLocale}
             />
-            <AboutUs />
-            <Benefits />
-            <ContactUs />
-            <Footer />
+            <AboutUs
+                currentLocale={currentLocale}
+                setCurrentLocale={setCurrentLocale}
+            />
+            <Benefits
+                currentLocale={currentLocale}
+                setCurrentLocale={setCurrentLocale}
+            />
+            <ContactUs
+                currentLocale={currentLocale}
+                setCurrentLocale={setCurrentLocale}
+            />
+            <Footer
+                currentLocale={currentLocale}
+                setCurrentLocale={setCurrentLocale}
+            />
             {/* </IntlProvider > */}
         </>
     )

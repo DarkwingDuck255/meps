@@ -37,19 +37,31 @@ function App() {
             />
           } />
           <Route path='/partnership' element={
-            <Partnership />
+            <Partnership
+              setCurrentLocale={setCurrentLocale}
+              currentLocale={currentLocale}
+            />
           } />
 
           <Route path='/machinery' element={
-            <Machinery />
+            <Machinery
+              setCurrentLocale={setCurrentLocale}
+              currentLocale={currentLocale}
+            />
           } />
 
           <Route path='/services' element={
-            <ServicesPage />
+            <ServicesPage
+              setCurrentLocale={setCurrentLocale}
+              currentLocale={currentLocale}
+            />
           } />
 
           <Route path='/contacts' element={
-            <ContactsPage />
+            <ContactsPage
+              setCurrentLocale={setCurrentLocale}
+              currentLocale={currentLocale}
+            />
           } />
 
           <Route path='*' element={

@@ -6,6 +6,7 @@ import * as Api from '../../utils/Api.js';
 import { useForm } from "react-hook-form";
 import useFormWithValidation from '../../utils/formValidate'
 import meme from '../../images/meme.jpg'
+import { FormattedMessage } from 'react-intl';
 
 function ContactUs(props) {
     const [feedback, setFeedback] = useState(false)
@@ -120,7 +121,8 @@ function ContactUs(props) {
         <>
             <div className='contact-us' onClick={openFeedback}>
                 <p className='contact-us__text'>
-                    Связаться с нами
+                    <FormattedMessage id="aboutusContactUs" defaultMessage="Связаться с нами" />
+                    {/* Связаться с нами */}
                 </p>
             </div>
 
@@ -185,7 +187,7 @@ function ContactUs(props) {
                         </div>
                         <ReCAPTCHA
 
-                        // код сайта 
+                            // код сайта 
                             // sitekey="6LfrXjkUAAAAAK0aMCuIZ3uN6t18S8VIZuYkjA8Y"
 
                             // код для localhost
