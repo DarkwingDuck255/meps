@@ -3,14 +3,17 @@ import admModule from '../../images/adm-module.png';
 import kpp from '../../images/kpp.png';
 import warehouse from '../../images/warehouse.png';
 import thermal from '../../images/thermal-point.png';
+import { FormattedMessage } from 'react-intl';
 
 export default function Modules() {
     return (
         <section className="modules">
             <h2 className='modules__header'>
+                <FormattedMessage id="headerMenuAboutUs" defaultMessage="О нас" />
                 Административные и вспомогательные модули
             </h2>
             <p className='modules__description'>
+                <FormattedMessage id="headerMenuAboutUs" defaultMessage="О нас" />
                 Модульные решения позволяют быстро возводить сооружения различного размера и назначения. Заводом изготавливаются индивидуальные решения на базе цельносварных металлических контейнеров или каркасных конструкций с обшивкой сэндвич-панелями.
             </p>
 
@@ -18,9 +21,11 @@ export default function Modules() {
                 <div className='catalogue__card'>
                     <img className='catalogue__card-image' src={admModule} />
                     <h4 className='catalogue__card-header'>
+                    <FormattedMessage id="headerMenuAboutUs" defaultMessage="О нас" />
                         Административный модуль
                     </h4>
                     <p className='catalogue__card-description'>
+                    <FormattedMessage id="headerMenuAboutUs" defaultMessage="О нас" />
                         Размещение помещений постоянного пребывания персонала, мастерских, технических комнат отдыха, помещения охраны, уборных и прочих помещений требуемой категории и назначения.
                     </p>
 
@@ -28,9 +33,11 @@ export default function Modules() {
                 <div className='catalogue__card'>
                     <img className='catalogue__card-image' src={kpp} />
                     <h4 className='catalogue__card-header'>
+                    <FormattedMessage id="headerMenuAboutUs" defaultMessage="О нас" />
                         Контрольно-пропускной пункт
                     </h4>
                     <p className='catalogue__card-description'>
+                    <FormattedMessage id="headerMenuAboutUs" defaultMessage="О нас" />
                         Модули с наружной и внутренней отделкой, системой электроснабжения, вентиляции икондиционирования, водоснабжения, связи, мебелью и прочим требуемым оборудованием для размещения персонала охраны.
                     </p>
 
@@ -38,6 +45,7 @@ export default function Modules() {
                 <div className='catalogue__card'>
                     <img className='catalogue__card-image' src={warehouse} />
                     <h4 className='catalogue__card-header'>
+                    <FormattedMessage id="headerMenuAboutUs" defaultMessage="О нас" />
                         Склад ГСМ
                     </h4>
                     <p className='catalogue__card-description'>
