@@ -5,13 +5,15 @@ import gas from '../../images/gas.png';
 // import airCompress from '../../images/air-compress.png';
 import blockContainer from '../../images/block-container.png';
 import ktp from '../../images/ktp.png';
+import { FormattedMessage } from 'react-intl';
 
 
 export default function Catalogue(props) {
     return (
         <section className='catalogue'>
             <h2 className='catalogue__header'>
-                Каталог оборудования
+            <FormattedMessage id="machineryCatalogueHeader" defaultMessage="Каталог оборудования" />
+                
             </h2>
             <div className='catalogue__cards'>
                 <div className='catalogue__card'>
