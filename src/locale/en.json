@@ -44,7 +44,8 @@
     "machineryKTPText": "Hybrid energy systems are designed to provide power supply for consumers by generating electrical energy from wind power, and in its absence, from diesel or gas fuel.",
     "machineryAdministrativeHeader": "Administrative and auxiliary modular structures",
     "machineryAdministrativeText": "Modular solutions make it possible to build structures of various sizes and purposes quickly. The company produces individual solutions based on all-welded metal containers or frame structures with sandwich panel cladding",
-    "machineryAdministrativeTitle": "They include rooms for permanent staff accommodation, workshops, technical break rooms, security staff rooms, restrooms, and other rooms of the required category and purpose",
+    "machineryAdministrativeModTitle":"Administrative modular structures",
+    "machineryAdministrativeModText": "They include rooms for permanent staff accommodation, workshops, technical break rooms, security staff rooms, restrooms, and other rooms of the required category and purpose",
     "machineryCheckpoint": "Checkpoints",
     "machineryCheckpointText": " These are modules with exterior and interior decoration, power supply system, ventilation and air conditioning, water supply, communications, furniture and other required equipment for the accommodation of security personnel.",
     "machineryDepots": "Fuel and lubricant depots",
@@ -57,7 +58,8 @@
     "MachineryNomenclatureText2": "Block-modular boiler houses",
     "MachineryNomenclatureText3": "Modular compressor rooms (gas booster, air compressor rooms)",
     "MachineryNomenclatureText4": "Electrical units",
-    "MachineryNomenclatureText5": "Electrical units",
+    "MachineryNomenclatureText5": "Administrative and auxiliary modular structures",
+    "machineryAdvantagesHeader": "Power plants",
     "machineryAdvantagesTitle": "Protection against precipitation",
     "machineryAdvantagesText": "Protection of the equipment from rain, snow, hail, wind, sand, etc.",
     "machineryAdvantagesTitle2": "Noise protection",
@@ -74,6 +76,7 @@
     "machineryAdvantagesText7": "The equipment can be operated at temperature ranges from -60⁰ to +60⁰",
     "machineryAdvantagesTitle8": "Certification",
     "machineryAdvantagesText8": "The power generating units have certificates of conformity",
+    "machineryTechInfoHeader":"Main technical specifications of power plants",
     "machineryFeaturesTitle":"Design features",
     "machineryFeaturesSubtitle":"Transportation",
     "machineryFeaturesText":"The wall fencing of the modular units is made of 3 mm profiled sheet which ensures high rigidity of the container and minimizes damage during transportation and operation. ",
@@ -90,5 +93,3 @@
     "machineryFeaturesText3-1":"The noise level at a distance of 10 m from the unit does not exceed 76 dB, which is ensured by the use of silencers in the ventilation openings, critical exhaust silencers and low-noise fans on the air coolers installed on the roof of the modular units",
     "machineryFeaturesText3-2":"The level of harmful NOx emissions does not exceed 250 mg/m3."
 }
-
-

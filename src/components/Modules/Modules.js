@@ -9,57 +9,60 @@ export default function Modules() {
     return (
         <section className="modules">
             <h2 className='modules__header'>
-                <FormattedMessage id="headerMenuAboutUs" defaultMessage="О нас" />
-                Административные и вспомогательные модули
+                <FormattedMessage id="machineryAdministrativeHeader" defaultMessage="Административные и вспомогательные модули" />
+
             </h2>
             <p className='modules__description'>
-                <FormattedMessage id="headerMenuAboutUs" defaultMessage="О нас" />
-                Модульные решения позволяют быстро возводить сооружения различного размера и назначения. Заводом изготавливаются индивидуальные решения на базе цельносварных металлических контейнеров или каркасных конструкций с обшивкой сэндвич-панелями.
+                <FormattedMessage id="machineryAdministrativeText" defaultMessage="Модульные решения позволяют быстро возводить сооружения различного размера и назначения. Заводом изготавливаются индивидуальные решения на базе цельносварных металлических контейнеров или каркасных конструкций с обшивкой сэндвич-панелями." />
+
             </p>
 
             <div className='catalogue__cards'>
                 <div className='catalogue__card'>
                     <img className='catalogue__card-image' src={admModule} />
                     <h4 className='catalogue__card-header'>
-                    <FormattedMessage id="headerMenuAboutUs" defaultMessage="О нас" />
-                        Административный модуль
+                        <FormattedMessage id="machineryAdministrativeModTitle" defaultMessage="Административный модуль" />
+
                     </h4>
                     <p className='catalogue__card-description'>
-                    <FormattedMessage id="headerMenuAboutUs" defaultMessage="О нас" />
-                        Размещение помещений постоянного пребывания персонала, мастерских, технических комнат отдыха, помещения охраны, уборных и прочих помещений требуемой категории и назначения.
+                        <FormattedMessage id="machineryAdministrativeModText" defaultMessage="Размещение помещений постоянного пребывания персонала, мастерских, технических комнат отдыха, помещения охраны, уборных и прочих помещений требуемой категории и назначения." />
+                        
                     </p>
 
                 </div>
                 <div className='catalogue__card'>
                     <img className='catalogue__card-image' src={kpp} />
                     <h4 className='catalogue__card-header'>
-                    <FormattedMessage id="headerMenuAboutUs" defaultMessage="О нас" />
-                        Контрольно-пропускной пункт
+                        <FormattedMessage id="machineryCheckpoint" defaultMessage="Контрольно-пропускной пункт" />
+                        
                     </h4>
                     <p className='catalogue__card-description'>
-                    <FormattedMessage id="headerMenuAboutUs" defaultMessage="О нас" />
-                        Модули с наружной и внутренней отделкой, системой электроснабжения, вентиляции икондиционирования, водоснабжения, связи, мебелью и прочим требуемым оборудованием для размещения персонала охраны.
+                        <FormattedMessage id="machineryCheckpointText" defaultMessage="Модули с наружной и внутренней отделкой, системой электроснабжения, вентиляции икондиционирования, водоснабжения, связи, мебелью и прочим требуемым оборудованием для размещения персонала охраны." />
+                        
                     </p>
 
                 </div>
                 <div className='catalogue__card'>
                     <img className='catalogue__card-image' src={warehouse} />
                     <h4 className='catalogue__card-header'>
-                    <FormattedMessage id="headerMenuAboutUs" defaultMessage="О нас" />
-                        Склад ГСМ
+                        <FormattedMessage id="machineryDepots" defaultMessage="Склад ГСМ" />
+                        
                     </h4>
                     <p className='catalogue__card-description'>
-                        Предназначены для хранения ГСМ, имеющие полимерные маслостойкие напольные покрытия, средства механизации, системы освещения, отопления и вентиляции, требуемой степени огнестойкости.
+                    <FormattedMessage id="machineryDepotsText" defaultMessage="Предназначены для хранения ГСМ, имеющие полимерные маслостойкие напольные покрытия, средства механизации, системы освещения, отопления и вентиляции, требуемой степени огнестойкости." />
+                        
                     </p>
 
                 </div>
                 <div className='catalogue__card'>
                     <img className='catalogue__card-image' src={thermal} />
                     <h4 className='catalogue__card-header'>
-                        Тепловой пункт
+                    <FormattedMessage id="machineryHeatUnits" defaultMessage="Тепловой пункт" />
+                        
                     </h4>
                     <p className='catalogue__card-description'>
-                        Предназначен для присоединения систем теплопотребления (отопления, вентиляции, ГВС и др.) к водяным тепловым сетям. Выполняет задачи коммерческого учёта воды и тепла, автоматического управления параметрами теплоносителя.
+                    <FormattedMessage id="machineryHeatUnitsText" defaultMessage="Предназначен для присоединения систем теплопотребления (отопления, вентиляции, ГВС и др.) к водяным тепловым сетям. Выполняет задачи коммерческого учёта воды и тепла, автоматического управления параметрами теплоносителя." />
+                        
                     </p>
 
                 </div>
