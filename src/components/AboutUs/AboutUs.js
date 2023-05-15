@@ -76,7 +76,7 @@ function AboutUs() {
                 <div className='about-us__contacts-green-block-wrapper'>
                     <div className='about-us__contacts-green-block'>
                         <h4 className='about-us__contacts-green-block-header'>
-                            <FormattedMessage id="headerMenuContacts" defaultMessage="Contacts" />
+                            <FormattedMessage id="headerMenuContacts" defaultMessage="Контакты" />
                         </h4>
                         <p className='about-us__contacts-green-block-address'>
                             <FormattedMessage id="aboutusContactsAdress" defaultMessage="100015, Республика Узбекистан, г.Ташкент

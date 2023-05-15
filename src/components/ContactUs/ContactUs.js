@@ -134,13 +134,13 @@ function ContactUs(props) {
 
                     </div>
                     <h3 className='feedback__form-header'>
-                        Отправить нам сообщение
+                        <FormattedMessage id="contactsHeader" defaultMessage=" Отправить нам сообщение" />
                     </h3>
                     <form className='feedback__form feedback__form_popup-width' name='feedbackForm' onSubmit={sendMsg} ref={form} id='feedbackForm'>
                         <div className='feedback__form-name-tel-wrap'>
                             <div className='feedback__form-input-wrap name_mod'>
                                 <label className='feedback__form-name-label' htmlFor='name' >
-                                    Имя
+                                    <FormattedMessage id="contactsName" defaultMessage="Имя" />
                                 </label>
                                 <input className={`feedback__form-name ${errors.name ? 'invalid' : ''}`} id='name' type='name' required name='name' autoComplete='off' minLength='3' maxLength='40'
                                     onChange={handleChange} values={values.name}
@@ -149,13 +149,16 @@ function ContactUs(props) {
                             </div>
                             <div className='feedback__form-input-wrap tel_mod'>
                                 <label className='feedback__form-name-label' htmlFor='tel'>
-                                    Телефон
+                                    <FormattedMessage id="contactsTel" defaultMessage="Телефон" />
+
                                 </label>
                                 <input className={`feedback__form-tel ${errors.tel ? 'invalid' : ''}`} id='tel' type='tel' name='tel' required onChange={handleChange} values={values.tel} minLength='6' maxLength='20'
                                 />
-                                <span className='invalid-text'>{errors.tel ? 'Введите номер телефона.' : ''}</span>
+                                <span className='invalid-text'>
+                                    {errors.tel ? <FormattedMessage id="contactsErrorTel" defaultMessage="Введите номер телефона." /> : ''}</span>
 
-                                <span className='invalid-text'>{values.tel.length > 20 ? 'Превышено максимальное количество цифр.' : ''}</span>
+                                {/* <span className='invalid-text'>{values.tel.length > 20 ? 
+                                <FormattedMessage id="" defaultMessage="Превышено максимальное количество цифр." /> : ''}</span> */}
                             </div>
                         </div>
                         <div className='feedback__form-input-wrap other-input_mod'>
@@ -164,21 +167,26 @@ function ContactUs(props) {
                             </label>
                             <input className={`feedback__form-email ${errors.email ? 'invalid' : ''}`} pattern={emailPattern} type='email' name='email' id='email' required onChange={handleChange} values={values.email}
                             />
-                            {errors.email ? <span className='invalid-text'>Введите корректный email.</span> : ''}
+                            {errors.email ? <span className='invalid-text'>
+                                <FormattedMessage id="contactsErrorEmail" defaultMessage="Введите корректный email." />
+                            </span> : ''}
 
                         </div>
                         <div className='feedback__form-input-wrap other-input_mod'>
                             <label className='feedback__form-name-label' htmlFor='company'>
-                                Компания
+                                <FormattedMessage id="contactsCompany" defaultMessage="Компания" />
+
                             </label>
                             <input className={`feedback__form-comany ${errors.company ? 'invalid' : ''}`} name='company' type='text' id='company' onChange={handleChange} values={values.company} minLength='6'
                             />
-                            <span className='invalid-text'>{errors.company ? 'Введите название вашей компании.' : ''}</span>
+                            <span className='invalid-text'>{errors.company ?
+                                <FormattedMessage id="contactsErrorCompany" defaultMessage="Введите название вашей компании." /> : ''}</span>
 
                         </div>
                         <div className='feedback__form-input-wrap textarea_mod'>
                             <label className='feedback__form-name-label' htmlFor='message'>
-                                Сообщение
+                                <FormattedMessage id="contactsMessage" defaultMessage="Сообщение" />
+
                             </label>
                             <span className='feedback__form-message-letter-count'>{text.length}/{MAX_TEXT_LENGTH}</span>
                             <textarea className='feedback__form-message' type='text' id='message' name='message' maxLength='500' onChange={handleTextAreaChange} values={values.message}
@@ -196,10 +204,16 @@ function ContactUs(props) {
                         />
 
                         <button className={`feedback__form-submit ${captcha === true ? '' : 'feedback__form-submit_disabled'}`} type='submit' disabled={!captcha}>
-                            Отправить сообщение
+                            <FormattedMessage id="contactsButton" defaultMessage="Отправить сообщение" />
+
                         </button>
-                        {success ? <span className='feedback__form-success-msg'>Сообщение успешно отправлено!</span> : ''}
-                        {success === false ? <span className='feedback__form-fail-msg'>Произошла ошибка, пожалуйста повторите попытку позже.</span> : ''}
+                        {success ? <span className='feedback__form-success-msg'>
+                            <FormattedMessage id="contactsMessageSent" defaultMessage="Сообщение успешно отправлено!" />
+                        </span> : ''}
+                        {success === false ? <span className='feedback__form-fail-msg'>
+                            <FormattedMessage id="contactsMessageError" defaultMessage="Произошла ошибка, пожалуйста повторите попытку позже." />
+                            
+                        </span> : ''}
                     </form>
                 </div>
             </div>

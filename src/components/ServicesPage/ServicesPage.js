@@ -4,10 +4,13 @@ import Header from "../Header/Header";
 import Services from "../Services/Services";
 
 
-function ServicesPage() {
+function ServicesPage({ currentLocale, setCurrentLocale }) {
     return (
         <>
-            <Header />
+            <Header
+                setCurrentLocale={setCurrentLocale}
+                currentLocale={currentLocale}
+            />
             <ContactUs />
             <Services />
             <Footer />

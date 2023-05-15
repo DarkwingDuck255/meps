@@ -95,7 +95,6 @@
     position: absolute;
     top: 70px;
     right: 0px;
-    
     background-color: #FFFFFF;
     box-shadow: 0px 4px 16px rgb(0 0 0 / 10%);
     width: 80px;
@@ -112,9 +111,10 @@
 }
 
 .header__change-lang-menu_visible {
-    height: 104px;
+    /* height: 104px; */
+    height: 48px;
     visibility: visible;
-    transition: all 1s ease-in-out;
+    transition: all .5s ease-in-out;
 }
 
 .header__change-lang-menu__option {
@@ -133,7 +133,7 @@
 .header__change-lang-menu__option:hover {
 
     box-shadow:2px 4px 20px rgba(235, 20, 20, 0.5); ;
-    transition: all 1s ease-in-out;
+    transition: all .5s ease-in-out;
 }
 
 .header__change-lang-menu__option:last-of-type {
