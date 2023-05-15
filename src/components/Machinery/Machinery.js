@@ -15,7 +15,7 @@ import PopupKTP from "../Popup/PopupKTP"
 import Schema from "../Schema/Schema"
 import TechInfo from "../TechInfo/TechInfo"
 
-export default function Machinery() {
+export default function Machinery({ setCurrentLocale, currentLocale }, props) {
     const [isOpenHibrid, setOpenHibrid] = useState(false)
     const [isOpenBoiler, setOpenBoiler] = useState(false)
     const [isOpenGasCompress, setOpenGasCompress] = useState(false)
@@ -57,7 +57,10 @@ export default function Machinery() {
 
     return (
         <>
-            <Header />
+            <Header
+                currentLocale={currentLocale}
+                setCurrentLocale={setCurrentLocale}
+            />
             <MachineryIntro />
             <ContactUs />
             <Benefits />
@@ -92,9 +95,15 @@ export default function Machinery() {
                 onClose={closeAllPopups}
             />
             <Modules />
-            <Mitsubishi />
-            <Schema />
-            <TechInfo />
+            <Mitsubishi
+                currentLocale={currentLocale}
+            />
+            <Schema
+                currentLocale={currentLocale}
+            />
+            <TechInfo
+                currentLocale={currentLocale}
+            />
             <Footer />
         </>
     )

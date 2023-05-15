@@ -4,17 +4,20 @@ import carousel from '../../images/carousel.png';
 import middleEast from '../../images/MIDDLE EAST POWER SOLUTIONS.svg';
 import mepsGroup from '../../images/meps-group.svg';
 import mitsubishi from '../../images/mitsubishi.jpg';
-import arrow from '../../images/arrow.svg';
+// import arrow from '../../images/arrow.svg';
 import { Link } from 'react-router-dom';
+import { FormattedMessage } from 'react-intl';
 
 function AboutUs() {
 
     return (
         <section className="about-us">
             <div className="about-us__slogan">
-                <h1 className="about-us__slogan-header">MEPS:
+                <h1 className="about-us__slogan-header">
+                    <FormattedMessage id="aboutusSlogan" defaultMessage="MEPS:
                     Ваша энергетическая
-                    независимость
+                    независимость" />
+
                 </h1>
             </div>
             <div className="about-us__slogan-green-rectangle" />
@@ -22,16 +25,17 @@ function AboutUs() {
             <div className='about-us__description'>
                 <div className='about-us__description-block'>
                     <h2 className='about-us__description-header'>
-                        О нас
+                        <FormattedMessage id="aboutusHeader" defaultMessage="О нас" />
                     </h2>
                     <p className='about-us__description-target'>
-                        «MIDDLE EAST POWER SOLUTIONS» создано в 2022 году. Компания ставит перед собой масштабные задачи: занять лидирующие позиции на рынке Узбекистана по поставкам энергетического оборудования, гармоничное внедрение поставленного оборудования в существующую производственную инфраструктуру заказчиков
-                        с последующим техническим сопровождением.
-
+                        <FormattedMessage id="aboutusText" defaultMessage="«MIDDLE EAST POWER SOLUTIONS» создано в 2022 году. Компания ставит перед собой масштабные задачи: занять лидирующие позиции на рынке Узбекистана по поставкам энергетического оборудования, гармоничное внедрение поставленного оборудования в существующую производственную инфраструктуру заказчиков
+                        с последующим техническим сопровождением." />
                     </p>
                     <p className='about-us__description-description'>
-                        В наших бизнес-процессах задействована команда сотрудников, имеющих отличный опыт работы в сфере энергетики и проектирования различных производственных объектов. Мы стремимся предложить своим заказчикам оптимальные технические решения, способные если не исключить, то минимизировать энергетическую зависимость от внешних факторов. Номенклатура предлагаемой продукции включает в себя различные типы генерирующего оборудования на базе газопоршневых
-                        и дизельных двигателей, газодожимные и компрессорные станции, электротехнические блоки, административные и вспомогательные модули.
+
+                        <FormattedMessage id="aboutusText2" defaultMessage="В наших бизнес-процессах задействована команда сотрудников, имеющих отличный опыт работы в сфере энергетики и проектирования различных производственных объектов. Мы стремимся предложить своим заказчикам оптимальные технические решения, способные если не исключить, то минимизировать энергетическую зависимость от внешних факторов. Номенклатура предлагаемой продукции включает в себя различные типы генерирующего оборудования на базе газопоршневых
+                        и дизельных двигателей, газодожимные и компрессорные станции, электротехнические блоки, административные и вспомогательные модули." />
+
                     </p>
 
                 </div>
@@ -53,14 +57,16 @@ function AboutUs() {
                 <div className='about-us__mitsubishi-description'>
 
                     <h3 className='about-us__mitsubishi-description-header'>
-                        Партнерство с Mitsubishi
+
+                        <FormattedMessage id="aboutusPartnershipHeader" defaultMessage="Партнерство с Mitsubishi" />
                     </h3>
                     <p className='about-us__mitsubishi-description-text'>
-                        ООО «MIDDLE EAST POWER SOLUTIONS» является официальным партнером
-                        и сервисным представителем компании Mitsubishi Turbocharger and Engine Europe b.V. в Узбекистане и странах СНГ.
+                        <FormattedMessage id="aboutusPartnershipText" defaultMessage="ООО «MIDDLE EAST POWER SOLUTIONS» является официальным партнером
+                        и сервисным представителем компании Mitsubishi Turbocharger and Engine Europe b.V. в Узбекистане и странах СНГ." />
+
                     </p>
                     <Link to='/partnership'>
-                        <img src={arrow} className='about-us__mitsubishi-description-link' alt='изображение стелки для перехода на страницу' />
+                        <div className='about-us__mitsubishi-description-link' alt='изображение стелки для перехода на страницу' />
                     </Link>
                 </div>
                 <div className='about-us__mitsubishi-green-rectangle' />
@@ -70,20 +76,24 @@ function AboutUs() {
                 <div className='about-us__contacts-green-block-wrapper'>
                     <div className='about-us__contacts-green-block'>
                         <h4 className='about-us__contacts-green-block-header'>
-                            Контакты
+                            <FormattedMessage id="headerMenuContacts" defaultMessage="Контакты" />
                         </h4>
                         <p className='about-us__contacts-green-block-address'>
-                            100015, Республика Узбекистан, г.Ташкент
-                            Мирабадский район, ул.Шахрисабзская 22
+                            <FormattedMessage id="aboutusContactsAdress" defaultMessage="100015, Республика Узбекистан, г.Ташкент
+                            Мирабадский район, ул.Шахрисабзская 22" />
+
                         </p>
                         <a href='tel:+998998985886' className='about-us__contacts-green-block-tel common__link'>
-                            тел: (+99899) 898-58-86
+                            <FormattedMessage id="aboutusContactsTel" defaultMessage="тел: " />
+                            (+99899) 898-58-86
                         </a>
                         <a href='tel:+998781406706' className='about-us__contacts-green-block-tel common__link'>
-                            тел: (+99878) 140-67-06
+                            <FormattedMessage id="aboutusContactsTel" defaultMessage="тел: " />
+                            (+99878) 140-67-06
                         </a>
                         <p className='about-us__contacts-green-block-fax'>
-                            факс: (+99899) 898-58-86
+                            <FormattedMessage id="aboutusContactsFax" defaultMessage="факс: " />
+                            (+99899) 898-58-86
                         </p>
                         <a href='mailto:meps@sks.uz' className='about-us__contacts-green-block-email common__link'>
                             e-mail: meps@sks.uz
@@ -93,13 +103,16 @@ function AboutUs() {
 
                 <div className='about-us__contacts-services'>
                     <h4 className='about-us__contacts-services-header'>
-                        Услуги
+                        <FormattedMessage id="aboutusServicesHeader" defaultMessage="Услуги" />
+
                     </h4>
                     <p className='about-us__contacts-services-text'>
-                        Благодаря наличию партнерских отношений с производителями оборудования «MEPS» обеспечивает высокий уровень сервисного и эксплуатационного обслуживания. Важным преимуществом «MEPS» является использование оригинальных запасных частей и расходных материалов.
+                        <FormattedMessage id="aboutusServicesText" defaultMessage="Благодаря наличию партнерских отношений с производителями оборудования «MEPS» обеспечивает высокий уровень сервисного и эксплуатационного обслуживания. Важным преимуществом «MEPS» является использование оригинальных запасных частей и расходных материалов." />
+
                     </p>
                     <Link to='/services' className='about-us__contacts-services-link common__link'>
-                        Подробнее
+                        <FormattedMessage id="aboutusServicesButton" defaultMessage="Подробнее" />
+
                     </Link>
                 </div>
             </div>
