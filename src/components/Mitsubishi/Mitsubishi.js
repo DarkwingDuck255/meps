@@ -1,16 +1,17 @@
 import './Mitsubishi.css';
 import graph from '../../images/mitsubishi-graph.png';
+import graphEn from '../../images/mitsubishi-graph-en.png';
 import nomenclature from '../../images/partnership-header-img.png';
 import { FormattedMessage } from 'react-intl';
 
-export default function Mitsubishi() {
+export default function Mitsubishi({currentLocale}) {
     return (
         <section className="mitsubishi">
             <h2 className='mitsubishi__header'>
                 <FormattedMessage id="machineryMitsubishiEqHeader" defaultMessage="Производственная линейка оборудования Mitsubishi" />
 
             </h2>
-            <img className='mitsubishi__graph' src={graph} />
+            <img className='mitsubishi__graph' src={currentLocale === 'en'? graphEn : graph} />
 
             <div className='mitsubishi__nomenclature'>
                 <img className='mitsubishi__nomenclature-image' src={nomenclature} />

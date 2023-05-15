@@ -57,9 +57,9 @@ export default function Machinery({ setCurrentLocale, currentLocale }, props) {
 
     return (
         <>
-            <Header 
-            currentLocale={currentLocale}
-            setCurrentLocale={setCurrentLocale}
+            <Header
+                currentLocale={currentLocale}
+                setCurrentLocale={setCurrentLocale}
             />
             <MachineryIntro />
             <ContactUs />
@@ -95,9 +95,15 @@ export default function Machinery({ setCurrentLocale, currentLocale }, props) {
                 onClose={closeAllPopups}
             />
             <Modules />
-            <Mitsubishi />
-            <Schema />
-            <TechInfo />
+            <Mitsubishi
+                currentLocale={currentLocale}
+            />
+            <Schema
+                currentLocale={currentLocale}
+            />
+            <TechInfo
+                currentLocale={currentLocale}
+            />
             <Footer />
         </>
     )

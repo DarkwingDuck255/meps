@@ -1,18 +1,19 @@
 import './TechInfo.css';
 import techInfoImg from '../../images/techinfo.png';
+import techInfoImgEn from '../../images/techinfo-en.png';
 import techIconOne from '../../images/transport.svg';
 import techIconTwo from '../../images/exploitation.svg';
 import techIconThree from '../../images/eco.svg';
 import { FormattedMessage } from 'react-intl';
 
-function TechInfo() {
+function TechInfo({currentLocale}) {
     return (
         <section className='tech-info' >
             <h2 className='tech-info__header'>
                 <FormattedMessage id="machineryTechInfoHeader" defaultMessage="Основные технические характеристики электрических станций" />
                 
             </h2>
-            <img className='tech-info__table' src={techInfoImg} />
+            <img className='tech-info__table' src={currentLocale === 'en' ? techInfoImgEn : techInfoImg} />
 
             <h3 className='tech-info__specification-header'>
                 <FormattedMessage id="machineryFeaturesTitle" defaultMessage="Конструктивные особенности" />

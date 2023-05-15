@@ -1,5 +1,6 @@
 import './Schema.css';
 import schemaImg from '../../images/schema.png';
+import schemaImgEn from '../../images/schema-en.png';
 import umbrella from '../../images/umbrella.svg';
 import bug from '../../images/bug.svg';
 import gears from '../../images/gears.svg';
@@ -10,14 +11,14 @@ import coldProtect from '../../images/cold-protect.svg';
 import sertification from '../../images/sertification.svg';
 import { FormattedMessage } from 'react-intl';
 
-export default function Schema() {
+export default function Schema({currentLocale}) {
     return (
         <section className="schema">
             <h2 className="schema__header">
                 <FormattedMessage id="machineryAdvantagesTitle" defaultMessage="Электрические станции" />
 
             </h2>
-            <img src={schemaImg} className="schema__image" />
+            <img src={currentLocale === 'en' ? schemaImgEn : schemaImg} className="schema__image" />
 
             <div className='schema__advantages'>
                 <div className='schema__advantages-item'>
@@ -115,12 +116,12 @@ export default function Schema() {
                         <h3 className='schema__advantages-item-header'>
                             <FormattedMessage id="machineryAdvantagesTitle8" defaultMessage="Сертификация" />
 
-                            
+
                         </h3>
                         <p className='schema__advantages-item-description'>
                             <FormattedMessage id="machineryAdvantagesText8" defaultMessage="Энергетические установки имеют сертификат соответствия" />
 
-                            
+
                         </p>
                     </div>
                 </div>
