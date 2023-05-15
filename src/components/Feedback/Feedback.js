@@ -10,7 +10,7 @@ import { FormattedMessage } from 'react-intl';
 function Feedback() {
 
 
-    const emailPattern = '[a-z0-9]+@[a-z]+\.[a-z]{2,3}'
+    const emailPattern = '^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$'
     const MAX_TEXT_LENGTH = 500;
     const [text, setText] = useState("");
     const form = useRef();
@@ -68,6 +68,7 @@ function Feedback() {
         const { name, tel, email, company, message } = form.current
         // console.log(name.value, company.value)
         onSubmitFeedback({ name, tel, email, company, message })
+        sendMessageToTelegram()
         console.log(form)
     }
 
@@ -77,6 +78,30 @@ function Feedback() {
         if (value === null) {
             setCaptcha(false)
         }
+    }
+
+    function sendMessageToTelegram() {
+        const name = document.getElementById("name").value;
+        const email = document.getElementById("email").value;
+        const tel = document.getElementById("tel").value
+        const company = document.getElementById("company").value
+        const message = document.getElementById("message").value;
+        // const xhr = new XMLHttpRequest();
+        // xhr.open("POST", "/", true);
+        // xhr.setRequestHeader('Content-Type', 'application/json');
+        // xhr.send(JSON.stringify({ name: name, email: email, message: message}));
+
+        return fetch(`/api/send-msg`, {
+            method: 'POST',
+            headers: {
+                'Accept': "application/json",
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({ name: name, email: email, message: message, tel: tel, company: company }),
+        })
+            .then((res) => {
+                return console.log(res)
+            })
     }
 
 

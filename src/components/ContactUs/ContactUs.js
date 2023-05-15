@@ -10,7 +10,8 @@ import { FormattedMessage } from 'react-intl';
 
 function ContactUs(props) {
     const [feedback, setFeedback] = useState(false)
-    const emailPattern = '[a-z0-9]+@[a-z]+\.[a-z]{2,3}'
+    // const emailPattern = '[a-z0-9]+@[a-z]+\.[a-z]{2,3}'
+    const emailPattern = '^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$'
     const MAX_TEXT_LENGTH = 500;
     const [text, setText] = useState("");
     const form = useRef();
@@ -103,10 +104,10 @@ function ContactUs(props) {
         // xhr.setRequestHeader('Content-Type', 'application/json');
         // xhr.send(JSON.stringify({ name: name, email: email, message: message}));
 
-        return fetch(`http://localhost:3001/send-msg`, {
+        return fetch(`/api/send-msg`, {
             method: 'POST',
             headers: {
-                // 'Accept': "application/json",
+                'Accept': "application/json",
                 "Content-Type": "application/json"
             },
             body: JSON.stringify({ name: name, email: email, message: message, tel: tel, company: company }),
@@ -195,11 +196,14 @@ function ContactUs(props) {
                         </div>
                         <ReCAPTCHA
 
-                            // код сайта 
-                            // sitekey="6LfrXjkUAAAAAK0aMCuIZ3uN6t18S8VIZuYkjA8Y"
+
+
+                        // код сайта 
+                            sitekey="6LfrXjkUAAAAAK0aMCuIZ3uN6t18S8VIZuYkjA8Y"
+
 
                             // код для localhost
-                            sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
+                            // sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
                             onChange={handleRecaptchaChange}
                         />
 

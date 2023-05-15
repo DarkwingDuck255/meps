@@ -1,4 +1,4 @@
-const baseUrl = 'http://localhost:3001'
+// const baseUrl = 'www.meps.uz'
 
 function errCheck(res) {
     if (res.ok) {
@@ -9,10 +9,11 @@ function errCheck(res) {
 }
 
 export function sendFeedback({ name, tel, email, company, text }) {
-    return fetch(`${baseUrl}/`, {
+    // ${baseUrl}
+    return fetch(`/api/send-email`, {
         method: 'POST',
         headers: {
-            // 'Accept': "application/json",
+            'Accept': "application/json",
             "Content-Type": "application/json"
         },
         body: JSON.stringify({ name, tel, email, company, text }),

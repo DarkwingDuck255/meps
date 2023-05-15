@@ -66,6 +66,7 @@ function Header({ setCurrentLocale, currentLocale }, props) {
                         <FormattedMessage id="headerMenuContacts" defaultMessage="Контакты" />
 
                     </Link>
+
                 </nav>
 
                 <div className={currentLocale === 'ru' ? 'header__lang header__lang_visible' : 'header__lang'} onMouseOver={openLangMenu} onMouseLeave={closeLangMenu}>
