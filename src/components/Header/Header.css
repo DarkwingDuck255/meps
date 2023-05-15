@@ -91,6 +91,7 @@
     visibility: hidden;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     flex-wrap: nowrap;
     position: absolute;
     top: 70px;
@@ -106,13 +107,13 @@
     line-height: 24px;
     cursor: pointer;
     overflow: hidden;
-    /* gap: 8px; */
-
+    gap: 8px;
+    transition: .5s ease-in-out;
 }
 
 .header__change-lang-menu_visible {
     /* height: 104px; */
-    height: 48px;
+    height: 52px;
     visibility: visible;
     transition: all .5s ease-in-out;
 }
@@ -121,7 +122,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    margin: 8px 0 8px 0;
+    /* margin: 8px 0 8px 0; */
     justify-content: space-evenly;
     align-items: center;
 }
@@ -132,7 +133,8 @@
 
 .header__change-lang-menu__option:hover {
 
-    box-shadow:2px 4px 20px rgba(235, 20, 20, 0.5); ;
+    /* box-shadow:2px 4px 20px rgba(235, 20, 20, 0.5); */
+    box-shadow: 0px 4px 21px rgba(0, 0, 0, 0.3);
     transition: all .5s ease-in-out;
 }
 

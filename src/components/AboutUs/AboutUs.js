@@ -4,7 +4,7 @@ import carousel from '../../images/carousel.png';
 import middleEast from '../../images/MIDDLE EAST POWER SOLUTIONS.svg';
 import mepsGroup from '../../images/meps-group.svg';
 import mitsubishi from '../../images/mitsubishi.jpg';
-import arrow from '../../images/arrow.svg';
+// import arrow from '../../images/arrow.svg';
 import { Link } from 'react-router-dom';
 import { FormattedMessage } from 'react-intl';
 
@@ -66,7 +66,7 @@ function AboutUs() {
 
                     </p>
                     <Link to='/partnership'>
-                        <img src={arrow} className='about-us__mitsubishi-description-link' alt='изображение стелки для перехода на страницу' />
+                        <div className='about-us__mitsubishi-description-link' alt='изображение стелки для перехода на страницу' />
                     </Link>
                 </div>
                 <div className='about-us__mitsubishi-green-rectangle' />

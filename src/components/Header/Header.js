@@ -2,6 +2,7 @@ import * as React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import logo from '../../images/logo.svg';
 import russian from '../../images/russian.svg';
+import english from '../../images/english.svg';
 import './Header.css';
 import { FormattedMessage } from 'react-intl';
 
@@ -73,7 +74,7 @@ function Header({ setCurrentLocale, currentLocale }, props) {
                 </div>
 
                 <div className={`header__lang ${currentLocale === 'en' ? 'header__lang_visible' : ''}`} onMouseOver={openLangMenu} onMouseLeave={closeLangMenu}>
-                    <img src={russian} className='header__lang-russian' />
+                    <img src={english} className='header__lang-russian' />
                     <p className='header__lang-text'>En</p>
                 </div>
 
@@ -84,7 +85,7 @@ function Header({ setCurrentLocale, currentLocale }, props) {
 
                 <div className={`header__change-lang-menu ${menuLang ? 'header__change-lang-menu_visible' : ''}`} onMouseLeave={closeLangMenu} onMouseOver={openLangMenu}>
                     <div className={`header__change-lang-menu__option ${currentLocale === 'en' ? 'header__change-lang-menu__option_invisible' : ''}`} onClick={changeLangEN}>
-                        <img src={russian} className='header__lang-russian' />
+                        <img src={english} className='header__lang-russian' />
                         <p className='header__lang-text'>En</p>
                     </div>
                     <div className={`header__change-lang-menu__option ${currentLocale === 'ru' ? 'header__change-lang-menu__option_invisible' : ''}`} onClick={changeLangRU}>

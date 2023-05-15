@@ -203,6 +203,12 @@ label {
     line-height: 24px;
     margin-top: 29px;
     cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+.feedback__form-submit:hover {
+    filter: drop-shadow(0px 4px 17px #009138);
+    transition: .3s ease-in-out;
 }
 
 .feedback__form-message-letter-count {
