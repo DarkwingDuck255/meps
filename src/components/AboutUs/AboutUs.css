@@ -183,6 +183,14 @@
     position: absolute;
     right: 0;
     bottom: 0;
+    background-image: url(../../images/arrow.svg);
+    background-size: 60px;
+    transition: .5s ease-in-out;
+}
+
+.about-us__mitsubishi-description-link:hover {
+    background-image: url(../../images/arrow-blue.svg);
+    transition: all .5s ease-in-out;
 }
 
 .about-us__mitsubishi-green-rectangle {
