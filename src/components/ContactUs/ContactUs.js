@@ -17,6 +17,7 @@ function ContactUs(props) {
     const form = useRef();
     const [captcha, setCaptcha] = useState(false);
     const [success, setSuccess] = useState();
+    const huy = /[^0-9]|^0{2,}/g
 
     const { values, isValid, handleChange, errors } = useFormWithValidation({
         name: '',
@@ -153,7 +154,12 @@ function ContactUs(props) {
                                     <FormattedMessage id="contactsTel" defaultMessage="Телефон" />
 
                                 </label>
-                                <input className={`feedback__form-tel ${errors.tel ? 'invalid' : ''}`} id='tel' type='tel' name='tel' required onChange={handleChange} values={values.tel} minLength='6' maxLength='20'
+                                <input className={`feedback__form-tel ${errors.tel ? 'invalid' : ''}`} id='tel' type='number' name='tel' required onChange={handleChange} values={values.tel} minLength='6' maxLength='20' onKeyPress={
+                                    (e) => {
+                                        if (!/[0-9]/.test(e.key)) {
+                                            e.preventDefault();
+                                        }
+                                    }}
                                 />
                                 <span className='invalid-text'>
                                     {errors.tel ? <FormattedMessage id="contactsErrorTel" defaultMessage="Введите номер телефона." /> : ''}</span>
@@ -198,7 +204,7 @@ function ContactUs(props) {
 
 
 
-                        // код сайта 
+                            // код сайта 
                             sitekey="6LfrXjkUAAAAAK0aMCuIZ3uN6t18S8VIZuYkjA8Y"
 
 
@@ -216,7 +222,7 @@ function ContactUs(props) {
                         </span> : ''}
                         {success === false ? <span className='feedback__form-fail-msg'>
                             <FormattedMessage id="contactsMessageError" defaultMessage="Произошла ошибка, пожалуйста повторите попытку позже." />
-                            
+
                         </span> : ''}
                     </form>
                 </div>

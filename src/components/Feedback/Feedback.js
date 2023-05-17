@@ -144,13 +144,16 @@ function Feedback() {
                                 <label className='feedback__form-name-label' htmlFor='tel'>
                                     <FormattedMessage id="contactsTel" defaultMessage="Телефон" />
                                 </label>
-                                <input className={`feedback__form-tel ${errors.tel ? 'invalid' : ''}`} id='tel' type='tel' name='tel' required onChange={handleChange} values={values.tel} minLength='6' maxLength='20'
+                                <input className={`feedback__form-tel ${errors.tel ? 'invalid' : ''}`} id='number' type='tel' name='tel' required onChange={handleChange} values={values.tel} minLength='6' maxLength='20'
+                                    onKeyPress={
+                                        (e) => {
+                                            if (!/[0-9]/.test(e.key)) {
+                                                e.preventDefault();
+                                            }
+                                        }}
                                 />
 
                                 <span className='invalid-text'>{errors.tel ? <FormattedMessage id="contactsErrorTel" defaultMessage="Введите номер телефона." /> : ''}</span>
-
-                                {/* пробный вариант для английского */}
-                                {/* <span className='invalid-text'>{values.tel.length < 6 && en ? 'Enter your phone number' : ''}</span> */}
                             </div>
                         </div>
                         <div className='feedback__form-input-wrap other-input_mod'>
