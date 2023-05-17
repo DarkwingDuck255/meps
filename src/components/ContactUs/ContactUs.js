@@ -154,7 +154,7 @@ function ContactUs(props) {
                                     <FormattedMessage id="contactsTel" defaultMessage="Телефон" />
 
                                 </label>
-                                <input className={`feedback__form-tel ${errors.tel ? 'invalid' : ''}`} id='tel' type='number' name='tel' required onChange={handleChange} values={values.tel} minLength='6' maxLength='20' onKeyPress={
+                                <input className={`feedback__form-tel ${errors.tel ? 'invalid' : ''}`} id='tel' type='tel' name='tel' required onChange={handleChange} values={values.tel} minLength='6' maxLength='20' onKeyPress={
                                     (e) => {
                                         if (!/[0-9]/.test(e.key)) {
                                             e.preventDefault();
