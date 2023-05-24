@@ -134,7 +134,7 @@ function Feedback() {
                                 <label className='feedback__form-name-label' htmlFor='name' >
                                     <FormattedMessage id="contactsName" defaultMessage="Имя" />
                                 </label>
-                                <input className={`feedback__form-name ${errors.name ? 'invalid' : ''}`} id='name' type='name' required name='name' autoComplete='off' minLength='3' maxLength='40'
+                                <input className={`feedback__form-name ${errors.name ? 'invalid' : ''}`} id='name' type='name' required name='name' autoComplete='off' minLength='2' maxLength='100'
                                     onChange={handleChange} values={values.name}
                                 // {...register("name", { validate: (value) => value.length > 2 && value.length < 30 })} 
                                 />
@@ -171,7 +171,7 @@ function Feedback() {
                             <label className='feedback__form-name-label' htmlFor='company'>
                                 <FormattedMessage id="contactsCompany" defaultMessage="Компания" />
                             </label>
-                            <input className={`feedback__form-comany ${errors.company ? 'invalid' : ''}`} name='company' type='text' id='company' onChange={handleChange} values={values.company} minLength='6'
+                            <input className={`feedback__form-comany ${errors.company ? 'invalid' : ''}`} name='company' type='text' id='company' onChange={handleChange} values={values.company} minLength='2' maxLength="100"
                             />
                             <span className='invalid-text'>{errors.company ?
                                 <FormattedMessage id="contactsErrorCompany" defaultMessage="Введите название вашей компании." /> : ''}</span>
