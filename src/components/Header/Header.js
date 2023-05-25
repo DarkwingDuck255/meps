@@ -3,6 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import logo from '../../images/logo.svg';
 import russian from '../../images/russian.svg';
 import english from '../../images/english.svg';
+import uzbek from '../../images/uzbek.svg';
 import './Header.css';
 import { FormattedMessage } from 'react-intl';
 
@@ -80,7 +81,7 @@ function Header({ setCurrentLocale, currentLocale }, props) {
                 </div>
 
                 <div className={`header__lang ${currentLocale === 'uz' ? 'header__lang_visible' : ''}`} onMouseOver={openLangMenu} onMouseLeave={closeLangMenu}>
-                    <img src={russian} className='header__lang-russian' />
+                    <img src={uzbek} className='header__lang-russian' />
                     <p className='header__lang-text'>Uz</p>
                 </div>
 
@@ -94,7 +95,7 @@ function Header({ setCurrentLocale, currentLocale }, props) {
                         <p className='header__lang-text'>Ru</p>
                     </div>
                     <div className={`header__change-lang-menu__option ${currentLocale === 'uz' ? 'header__change-lang-menu__option_invisible' : ''}`}onClick={changeLangUZ}>
-                        <img src={russian} className='header__lang-russian' />
+                        <img src={uzbek} className='header__lang-russian' />
                         <p className='header__lang-text'>Uz</p>
                     </div>
                 </div>
