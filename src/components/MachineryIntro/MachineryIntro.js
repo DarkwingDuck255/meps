@@ -15,6 +15,11 @@ export default function MachineryIntro() {
                     Модульная компоновка энергетического оборудования позволяет минимизировать объем строительно-монтажных работ и существенно сократить сроки и стоимость сооружения объектов." />
                 </p>
             </div>
+
+            <h2 className='machinery-intro__subtitle'>
+
+                <FormattedMessage id="machineryHeaderSubtitle" defaultMessage="Преимущества оборудования" />
+            </h2>
         </section>
     )
 }

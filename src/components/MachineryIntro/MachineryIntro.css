@@ -1,15 +1,15 @@
 .machinery-intro {
     max-width: 1440px;
     width: 100%;
-    
-    
-    
+
+
+
     margin: 0 auto;
     margin-top: 48px;
     font-family: 'Fira Sans';
     font-style: normal;
     color: white;
-    
+
 }
 
 .machinery-intro__container {
@@ -46,4 +46,17 @@
     font-weight: 400;
     font-size: 20px;
     line-height: 28px;
+}
+
+.machinery-intro__subtitle {
+    color: black;
+    font-family: 'Fira Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 32px;
+    display: flex;
+    justify-content: center;
+    margin: 44px auto 0 auto;
+
 }

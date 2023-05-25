@@ -112,8 +112,8 @@
 }
 
 .header__change-lang-menu_visible {
-    /* height: 104px; */
-    height: 52px;
+    height: 104px;
+    /* height: 52px; */
     visibility: visible;
     transition: all .5s ease-in-out;
 }
