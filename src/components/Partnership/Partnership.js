@@ -4,11 +4,14 @@ import Header from "../Header/Header"
 import PartnershipImages from "../PartnershipImages/PartnershipImages"
 import PartnershipText from "../PartnershipText/PartnershipText"
 
-function Partnership() {
+function Partnership({ setCurrentLocale, currentLocale }) {
     return (
         <>
-            <Header />
-            <ContactUs/>
+            <Header
+                setCurrentLocale={setCurrentLocale}
+                currentLocale={currentLocale}
+            />
+            <ContactUs />
             <PartnershipText />
             <PartnershipImages />
             <Footer />

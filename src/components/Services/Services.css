@@ -46,9 +46,10 @@
 
 .services__advantages-item {
     max-width: 470px;
+    width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     font-weight: 400;
     font-size: 20px;
     line-height: 28px;
