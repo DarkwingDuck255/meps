@@ -51,17 +51,17 @@
     overflow: hidden;
 }
 
-.about-us__description-block {
+/* .about-us__description-block {
     display: flex;
     flex-direction: column;
     margin: 0;
     margin-left: 140px;
     max-width: 710px;
     width: 100%;
-}
+} */
 
 .about-us__description-header {
-    padding-top: 115px;
+    /* padding-top: 115px; */
     margin: 0;
     margin-bottom: 42px;
     font-family: 'Fira Sans';
@@ -79,6 +79,7 @@
     font-weight: 400;
     font-size: 20px;
     line-height: 24px;
+    margin-right: 120px;
 }
 
 .about-us__description-description {
@@ -88,6 +89,7 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
+    margin-right: 24px;
 }
 
 .about-us__right-block {
@@ -119,17 +121,22 @@
     display: flex;
     padding-top: 116px;
     margin-left: 20px;
+    height: 40px;
+    width: fit-content;
 }
 
 .about-us__right-block-header:nth-child(2) {
     padding-top: 0;
     margin-top: 13px;
+    height: 20px;
 }
 
 .about-us__right-block-header-description_vertical {
     display: flex;
     margin-top: 265px;
     margin-left: 20px;
+    height: 173px;
+    width: fit-content;
 }
 
 .about-us__mitsubishi {
