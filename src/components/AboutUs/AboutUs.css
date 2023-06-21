@@ -149,7 +149,7 @@
 
 .about-us__mitsubishi-image {
     max-width: 730px;
-    width: 100%;
+    width: 50%;
     display: flex;
 }
 
@@ -204,7 +204,7 @@
     position: absolute;
     right: 0;
     background-color: #009138;
-    width: 710px;
+    width: 50%;
     height: 157px;
     z-index: -2;
 }

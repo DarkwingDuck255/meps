@@ -61,9 +61,68 @@
         margin-top: 63px;
     }
 
-    
+    .about-us__description-description {
+        margin: 0 0 25px 0;
+    }
+
     .about-us__description-target {
         margin-right: 99px;
         font-size: 17px;
     }
+
+    .about-us__right-block-header {
+        height: 35px;
+    }
+
+    .about-us__right-block-header:nth-child(2) {
+        height: 16px;
+    }
+
+    .about-us__mitsubishi-image {
+        max-width: 454px;
+        height: fit-content;
+        margin-left: 50px;
+    }
+
+    .about-us__mitsubishi-description {
+        height: 258px;
+        max-width: 373px;
+        margin-top: 25px;
+    }
+
+    .about-us__mitsubishi-description-header {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .about-us__mitsubishi-description-text {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .about-us__mitsubishi-description-link {
+        width: 40px;
+        height: 40px;
+        background-size: 40px;
+    }
+
+    .about-us__mitsubishi-green-rectangle {
+        display: none;
+    }
+
+    .about-us__contacts-green-block-wrapper {
+        max-width: 390px;
+    }
+
+    .about-us__contacts-services-header {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .about-us__contacts-services-text {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+
 }
