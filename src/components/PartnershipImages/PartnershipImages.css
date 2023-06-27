@@ -1,12 +1,29 @@
 .partnership-section__images {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-evenly;
+
     background-color: #0084C7;
 }
 
+.partnership-section__images-wrap {
+    max-width: 1440px;
+    width: 100%;
+    display: flex;
+    align-self: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 0 auto;
+}
+
+
 .partnership-section__pic {
+    display: flex;
     margin: 48px 0 48px 0;
+}
+
+@media screen and (max-width: 1166px) {
+    .partnership-section__pic {
+        width: 216px;
+        height: 195px;
+    }
 }

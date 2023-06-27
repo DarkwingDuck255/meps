@@ -1,4 +1,5 @@
 import './Mitsubishi.css';
+import './Mitsubishi-tablet.css';
 import graph from '../../images/mitsubishi-graph.png';
 import graphEn from '../../images/mitsubishi-graph-en.png';
 import nomenclature from '../../images/partnership-header-img.png';

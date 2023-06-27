@@ -1,4 +1,5 @@
 import './PartnershipText.css';
+import './PartnershipText-tablet.css';
 import partnershipHeaderImg from '../../images/partnership-header-img.png';
 import { FormattedMessage } from 'react-intl';
 
@@ -6,15 +7,21 @@ function PartnershipText() {
     return (
         <section className="partnership-section">
             <div className="partnership-section__header-wrapper">
-                <img className="partnership-section__header-image" src={partnershipHeaderImg} />
-                <div className="partnership-section__header-blue-rectangle">
-                    <h2 className="partnership-section__header">
-                        <FormattedMessage id="aboutusPartnershipHeader" defaultMessage="Партнерство с Mitsubishi" />
-                    </h2>
-                    <p className="partnership-section__header-intro">
-                        <FormattedMessage id="aboutusPartnershipText" defaultMessage="«MIDDLE EAST POWER SOLUTIONS» является официальным партнером и сервисным представителем компании Mitsubishi Turbocharger and Engine Europe b.V. в Узбекистане и странах СНГ." />
+                <div className='partnership-section__header-image-block'>
+                    <img className="partnership-section__header-image" src={partnershipHeaderImg} />
+                </div>
 
-                    </p>
+                <div className="partnership-section__header-blue-rectangle">
+                    <div className='partnership-section__header-blue-rectangle-text-wrap'>
+                        <h2 className="partnership-section__header">
+                            <FormattedMessage id="aboutusPartnershipHeader" defaultMessage="Партнерство с Mitsubishi" />
+                        </h2>
+                        <p className="partnership-section__header-intro">
+                            <FormattedMessage id="aboutusPartnershipText" defaultMessage="«MIDDLE EAST POWER SOLUTIONS» является официальным партнером и сервисным представителем компании Mitsubishi Turbocharger and Engine Europe b.V. в Узбекистане и странах СНГ." />
+
+                        </p>
+                    </div>
+
                 </div>
             </div>
 

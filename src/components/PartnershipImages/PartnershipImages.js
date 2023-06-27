@@ -8,10 +8,13 @@ import imageFour from '../../images/partnership-four.png';
 function PartnershipImages() {
     return (
         <section className='partnership-section__images'>
-            <img src={imageOne} className='partnership-section__pic' />
-            <img src={imageTwo} className='partnership-section__pic' />
-            <img src={imageThree} className='partnership-section__pic' />
-            <img src={imageFour} className='partnership-section__pic' />
+            <div className='partnership-section__images-wrap' >
+                <img src={imageOne} className='partnership-section__pic' />
+                <img src={imageTwo} className='partnership-section__pic' />
+                <img src={imageThree} className='partnership-section__pic' />
+                <img src={imageFour} className='partnership-section__pic' />
+            </div>
+
         </section>
     )
 }

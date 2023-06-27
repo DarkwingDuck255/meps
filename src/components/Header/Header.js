@@ -5,6 +5,7 @@ import russian from '../../images/russian.svg';
 import english from '../../images/english.svg';
 import uzbek from '../../images/uzbek.svg';
 import './Header.css';
+import './Header-tablet.css';
 import { FormattedMessage } from 'react-intl';
 
 function Header({ setCurrentLocale, currentLocale }, props) {

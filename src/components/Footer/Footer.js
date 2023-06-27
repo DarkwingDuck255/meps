@@ -28,8 +28,8 @@ function Footer() {
                 </div>
                 <img src={logo} className='footer__logo' alt='логотип' />
                 <div className='footer__contacts'>
-                    <a href='#' className='footer__contacts-link common__link'>
-                        <FormattedMessage id="headerMenuContacts" defaultMessage="Контакты" /></a>
+                    <Link to='/contacts' className='footer__contacts-link common__link'>
+                        <FormattedMessage id="headerMenuContacts" defaultMessage="Контакты" /></Link>
                     <p className='footer__contacts-address'>
                         <FormattedMessage id="aboutusContactsAdress" defaultMessage="100015, Республика Узбекистан, г.Ташкент
                         Мирабадский район, ул.Шахрисабзская 22" />
