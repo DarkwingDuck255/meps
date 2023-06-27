@@ -1,4 +1,5 @@
 import './Benefits.css';
+import './Benefits-tablet.css';
 import squares from '../../images/squares.svg';
 import gear from '../../images/gear.svg';
 import volume from '../../images/volume.svg';

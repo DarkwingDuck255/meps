@@ -75,10 +75,10 @@ p {
 }
 
 .footer__button-to-top {
-    /* position: absolute;
-    right: 149px;
-    top: 31px; */
-    margin: 31px 149px auto 25px;
+    position: absolute;
+    right: 50px;
+    top: 24px;
+    /* margin: 31px 149px auto 25px; */
     background-image: url(../../images/arrow-to-top.svg);
     /* background-size: 26px 26px; */
     background-size: contain;

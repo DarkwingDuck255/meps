@@ -163,9 +163,6 @@ function ContactUs(props) {
                                 />
                                 <span className='invalid-text'>
                                     {errors.tel ? <FormattedMessage id="contactsErrorTel" defaultMessage="Введите номер телефона." /> : ''}</span>
-
-                                {/* <span className='invalid-text'>{values.tel.length > 20 ? 
-                                <FormattedMessage id="" defaultMessage="Превышено максимальное количество цифр." /> : ''}</span> */}
                             </div>
                         </div>
                         <div className='feedback__form-input-wrap other-input_mod'>

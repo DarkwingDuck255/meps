@@ -15,7 +15,7 @@ export default function Schema({currentLocale}) {
     return (
         <section className="schema">
             <h2 className="schema__header">
-                <FormattedMessage id="machineryAdvantagesTitle" defaultMessage="Электрические станции" />
+                <FormattedMessage id="machineryAdvantagesHeader" defaultMessage="Электрические станции" />
 
             </h2>
             <img src={currentLocale === 'en' ? schemaImgEn : schemaImg} className="schema__image" />

@@ -1,4 +1,5 @@
 import './AboutUs.css';
+import './AboutUs-tablet.css';
 import meps from '../../images/MEPS.svg';
 import carousel from '../../images/carousel.png';
 import middleEast from '../../images/MIDDLE EAST POWER SOLUTIONS.svg';
@@ -22,7 +23,7 @@ function AboutUs() {
             </div>
             <div className="about-us__slogan-green-rectangle" />
 
-            <div className='about-us__description'>
+            {/* <div className='about-us__description'>
                 <div className='about-us__description-block'>
                     <h2 className='about-us__description-header'>
                         <FormattedMessage id="aboutusHeader" defaultMessage="О нас" />
@@ -49,6 +50,35 @@ function AboutUs() {
                     </div>
 
                     <img className='about-us__right-block-image' src={carousel} alt='изображения с электростанций' />
+                </div>
+            </div> */}
+
+            <div className='aboutus__wrap'>
+                <div className='aboutus_left-block'>
+                    <div className='about-us__description-block'>
+                        <h2 className='about-us__description-header'>
+                            <FormattedMessage id="aboutusHeader" defaultMessage="О нас" />
+                        </h2>
+                        <p className='about-us__description-target'>
+                            <FormattedMessage id="aboutusText" defaultMessage="«MIDDLE EAST POWER SOLUTIONS» создано в 2022 году. Компания ставит перед собой масштабные задачи: занять лидирующие позиции на рынке Узбекистана по поставкам энергетического оборудования, гармоничное внедрение поставленного оборудования в существующую производственную инфраструктуру заказчиков
+                        с последующим техническим сопровождением." />
+                        </p>
+                        <p className='about-us__description-description'>
+
+                            <FormattedMessage id="aboutusText2" defaultMessage="В наших бизнес-процессах задействована команда сотрудников, имеющих отличный опыт работы в сфере энергетики и проектирования различных производственных объектов. Мы стремимся предложить своим заказчикам оптимальные технические решения, способные если не исключить, то минимизировать энергетическую зависимость от внешних факторов. Номенклатура предлагаемой продукции включает в себя различные типы генерирующего оборудования на базе газопоршневых
+                        и дизельных двигателей, газодожимные и компрессорные станции, электротехнические блоки, административные и вспомогательные модули." />
+
+                        </p>
+                    </div>
+                </div>
+                <div className='aboutus__right'>
+                    <img className='about-us__right-block-header' src={meps} />
+
+                    
+
+                    <img className='about-us__right-block-header' src={middleEast} />
+                    <img className='aboutus__carousel' src={carousel} alt='изображения с электростанций' />
+                    <img className='about-us__right-block-header-description_vertical' src={mepsGroup} />
                 </div>
             </div>
 
