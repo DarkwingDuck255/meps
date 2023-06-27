@@ -1,0 +1,41 @@
+@media screen and (max-width: 1166px) {
+
+    .partnership-section__header-blue-rectangle {
+        min-height: 491px;
+    }
+
+    .partnership-section__header-blue-rectangle-text-wrap {
+        margin-left: 110px;
+        margin-right: 50px;
+        max-width: 352px;
+    }
+
+    .partnership-section__header-image {
+        width: auto;
+        max-width: 581px;
+        right: -108px;
+    }
+
+    .partnership-section__header {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .partnership-section__header-intro {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    
+    .partnership-section__header-image-block {
+        max-width: 472px;
+    }
+
+    .partnership-section__article {
+        margin-top: 28px;
+    }
+
+    .partnership-section__article-text {
+        line-height: 24px;
+        margin-top: 24px;
+    }
+}
