@@ -1,4 +1,5 @@
 import './Catalogue.css';
+import './Catalogue-tablet.css';
 import windSupply from '../../images/wind-supply.png';
 import waterHeat from '../../images/water-heat.png';
 import gas from '../../images/gas.png';

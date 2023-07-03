@@ -1,0 +1,10 @@
+@media screen and (max-width: 1210px) {
+    .schema__advantages {
+        max-width: 765px;
+        justify-content: center;
+    }
+
+    .schema__advantages-item {
+        max-width: 372px;
+    }
+}

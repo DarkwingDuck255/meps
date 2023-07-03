@@ -1,4 +1,5 @@
 import './Schema.css';
+import './Schema-tablet.css';
 import schemaImg from '../../images/schema.png';
 import schemaImgEn from '../../images/schema-en.png';
 import umbrella from '../../images/umbrella.svg';
