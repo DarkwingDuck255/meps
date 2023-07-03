@@ -1,0 +1,6 @@
+@media screen and (max-width: 1024px) {
+    .catalogue__cards {
+        max-width: 764px;
+    }
+
+}

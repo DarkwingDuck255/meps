@@ -1,4 +1,5 @@
 import './TechInfo.css';
+import './TechInfo-tablet.css';
 import techInfoImg from '../../images/techinfo.png';
 import techInfoImgEn from '../../images/techinfo-en.png';
 import techInfoImgUz from '../../images/techinfo-uz.png';

@@ -21,12 +21,17 @@
 }
 
 .schema__advantages {
-    max-width: 1168px;
+    max-width: 1194px;
     width: 100%;
-    display: grid;
+    /* display: grid;
     margin: 0 auto 50px auto;
     grid-template-columns: repeat(auto-fill, minmax(384px, 1fr));
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr); */
+    display: flex;
+    gap: 21px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+
 }
 
 .schema__advantages-item {

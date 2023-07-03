@@ -57,7 +57,7 @@
 .mitsubishi__nomenclature-container {
     max-width: 730px;
     width: 100%;
-    min-height: 373px;
+    max-height: 373px;
     margin: 22px 0 54px 0;
     background-color: #0084C7;
     color: white;

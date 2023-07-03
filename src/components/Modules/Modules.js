@@ -1,4 +1,5 @@
 import './Modules.css';
+import './Modules-tablet.css';
 import admModule from '../../images/adm-module.png';
 import kpp from '../../images/kpp.png';
 import warehouse from '../../images/warehouse.png';

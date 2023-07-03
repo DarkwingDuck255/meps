@@ -1,4 +1,5 @@
 import './MachineryIntro.css';
+import './MachineryIntro-tablet.css';
 import { FormattedMessage } from 'react-intl';
 
 export default function MachineryIntro() {

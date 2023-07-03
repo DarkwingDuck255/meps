@@ -1,0 +1,26 @@
+@media screen and (max-width: 1024px) {
+    .machinery-intro {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .machinery-intro__container {
+        max-width: 837px;
+    }
+
+    .machinery-intro__header-wrapper {
+        margin-top: 136px;
+    }
+
+    .machinery-intro__header {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .machinery-intro__description {
+        max-width: 531px;
+        font-size: 18px;
+        line-height: 24px;
+    }
+}
