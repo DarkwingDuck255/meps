@@ -1,4 +1,5 @@
 import './Contacts.css';
+import './Contacts-tablet.css';
 import { FormattedMessage } from 'react-intl';
 
 function Contacts() {
