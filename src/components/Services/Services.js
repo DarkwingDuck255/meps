@@ -1,4 +1,5 @@
 import './Services.css';
+import './Services-tablet.css';
 import warranty from '../../images/warranty.svg';
 import techSupport from '../../images/tech-support.svg';
 import monitoring from '../../images/monitoring.svg';

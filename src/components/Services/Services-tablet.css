@@ -1,0 +1,36 @@
+@media screen and (max-width: 1156px) {
+    .services {
+        max-width: 924px;
+    }
+
+    .services__header {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .services__text {
+        max-width: 924px;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .servces__advantages {
+        max-width: 924px;
+        row-gap: 16px;
+    }
+
+    .services__advantages-item {
+        max-width: 452px;
+        font-size: 16px;
+        line-height: 28px;
+        justify-content:unset;
+        width: 100%;
+    }
+
+    .services__advantages-item-image {
+        width: 40px;
+        height: 40px;
+    }
+
+
+}
