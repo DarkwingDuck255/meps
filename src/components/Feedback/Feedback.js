@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import './Feedback.css';
+import './Feedback-tablet.css';
 import ReCAPTCHA from "react-google-recaptcha";
 import * as Api from '../../utils/Api.js';
 import { useForm } from "react-hook-form";

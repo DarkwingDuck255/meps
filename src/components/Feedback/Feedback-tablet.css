@@ -1,0 +1,54 @@
+@media screen and (max-width: 1156px) {
+    .feedback {
+        max-width: 1024px;
+        margin: 0 auto;
+    }
+
+    .feedback__green-rectangle {
+        margin-top: 100px;
+    }
+
+    .feedback__form-header {
+        font-size: 20px;
+        margin: 16px auto 24px 56px;
+        line-height: normal;
+    }
+
+    .feedback__form {
+        margin: 0 16px 32px 16px;
+    }
+
+    .feedback__form-name-tel-wrap {
+        flex-wrap: wrap;
+        gap: 27px;
+    }
+
+    /* .feedback__form-name {
+        box-sizing: border-box;
+    } */
+
+    .name_mod {
+        max-width: 471px;
+        margin-right: 0;
+    }
+
+    .feedback__form-name {
+        max-width: 471px;
+    }
+
+    .tel_mod {
+        max-width: 471px;
+    }
+
+    .feedback__form-tel {
+        max-width: 471px;
+    }
+
+    .other-input_mod {
+        max-width: 471px;
+    }
+
+    .textarea_mod {
+        max-width: 471px;
+    }
+}
