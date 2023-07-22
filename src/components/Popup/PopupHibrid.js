@@ -13,8 +13,12 @@ function PopupHibrid(props) {
     }
     return (
         <div className={`popup-wrap ${props.isOpenHibrid ? 'popup-wrap_visible' : ''}`} onClick={closeByClickOnOverlay}>
+            <div className={'popup-wrapper'}>
             <div className={`popup ${props.isOpenHibrid ? 'popup_visible' : ''}`}>
-                <button className='popup__close-btn' onClick={props.onClose} />
+                {/* <div className='popup-btn-wrap'> */}
+                    <button className='popup__close-btn' onClick={props.onClose} />
+                {/* </div> */}
+
                 <h4 className="popup__title">
                     <FormattedMessage id="machineryHybridTitle" defaultMessage="Ветродизельная гибридная энергетическая установка" />
 
@@ -59,7 +63,8 @@ function PopupHibrid(props) {
                         </div>
                     </div>
                 </div>
-            </div>
+            
+            </div></div>
         </div>
     );
 }
